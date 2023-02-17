@@ -1,0 +1,33 @@
+تقسیم بندی وظایف:
+
+Mehrdad:
+1.Home page: header, rocket animation, backward icon
+2.About us page
+mehrdadjokari13@gmail.com
+
+Farhad:
+1.Home page: what we do, latest works
+2.Our works, >> slider?
+farhad.13ahmadi.83@gmail.com
+
+Ayeh:
+1.Home page: our process, why us, meet our team
+2.All pages: Footer
+ayehmozaffari1402@gmail.com 
+
+Sheyda: 
+role: Scrum Master
+1.PowerPoint
+2.Our Blogs
+
+Sara:
+role: Presenter
+1.Github
+2.Design Post
+sara.vafaei2@gmail.com
+
+1401/11/27
+
+
+
+
