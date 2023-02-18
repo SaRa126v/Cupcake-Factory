@@ -1,0 +1,305 @@
+/*   
+ *    '   '    *       '    *        '
+    /\  *      '    *   '      '   *
+   /\/\     *        '    *      '
+  /\/\/\     '   *        '      *    '  * 
+ /\/\/\/\   *    '   *    '    *   '   * 
+ |  -_- |      |     |   .   '     *  
+*--|\/|--*     |_____|   |    *     '    *
+   |/\|      * |     |   |    '     * 
+   |  |        |     |   |   *      '     *  
+*/
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    height: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "monospace", sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+@font-face {
+    font-family: monospace;
+    src: url(fonts/Montserrat/);
+
+}
+
+/* header */
+
+#header-home {
+    background-image: url(images/background-header.png);
+    width: 100%;
+    height: 713px;
+    background-size: cover;
+}
+
+/* cantainer-header */
+
+.cantainer {
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+/* div-top-header */
+
+.div-top-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.div-top-header h1 {
+    margin: 0;
+    font-size: 15px;
+    padding: 5px 15px;
+    color: white;
+}
+
+/* div-left-header */
+
+.div-left-header {
+    display: flex;
+    padding-top: 10px;
+}
+
+/* animation-ul-flag-icon-header */
+
+@keyframes ul-flag-icon-header {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateY(-30px);
+    }
+}
+
+/* icon-flag-header */
+
+.icon-flag-header {
+    width: 20px;
+    margin-top: 5px;
+}
+
+.asdf:hover>ul {
+    animation-name: ul-flag-icon-header;
+    animation-duration: 0.7s;
+    display: inline-block;
+    animation-fill-mode: forwards;
+}
+
+/* a-top-flag-header */
+
+.a-top-flag-header {
+    margin-top: 5px;
+}
+
+
+/* ul-flag-icon-header */
+
+.ul-flag-icon-header {
+    padding-left: 0;
+    margin-left: -15px;
+    width: 50px;
+    background-color: white;
+    display: inline-block;
+    display: none;
+    visibility: hidden;
+}
+
+/* li-flag-icon-header */
+
+.li-flag-icon-header {
+    
+    padding: 5px;
+    margin-left: 9px;
+    display: inline-block;
+}
+
+.icon-flag-header.top {
+    display: flex;
+}
+
+/* div-right-header */
+
+.div-right-header {
+    display: flex;
+    padding-top: 10px;
+}
+
+/* icon-menu icon-search */
+
+.icon-search,
+.icon-menu {
+    width: 25px;
+}
+
+.a-icon-search,
+.a-icon-menu {
+    padding: 0 10px;
+}
+
+/* ul & li header */
+
+.div-top-header>div>ul>li:hover>ul{
+    display: inline-block;
+    animation-name: ul-flag-icon-header;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.div-top-header>div>ul>li>a>h1{
+    padding-bottom: 20px;
+}
+
+.div-top-header>div>ul{
+    position: relative;
+}
+
+.div-top-header>div>ul>li>ul{
+    position: absolute;
+    left: 0;
+    top: 170%;
+    display: none;
+}
+
+.div-top-header>div>ul>li>ul>a>li{
+    color: #000000;
+    padding: 20px 120px 20px 20px;
+    width: 100px;
+    background-color: rgb(245, 245, 245);
+}
+
+.div-top-header>div>ul>li>ul>a>li:hover{
+    background-color: white;
+}
+
+/* animation-rocket */
+
+@keyframes rocket {
+    0% {}
+
+    99.5% {
+        opacity: 1;
+        transform: translate(400px, -800px);
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* rocket-header */
+
+.rocket-header {
+    width: 20%;
+
+    position: absolute;
+    right: 0%;
+    top: 76.4%;
+
+    animation-name: rocket;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+/* animation-Mountain */
+
+@keyframes Mountain {
+    0% {}
+
+    100% {
+        transform: translate(-20px, 100px);
+    }
+}
+
+/* Mountain-header */
+
+.Mountain-header {
+    width: 450px;
+
+    position: absolute;
+    right: 10%;
+    top: 5%;
+
+    animation-name: Mountain;
+    animation-duration: 10s;
+    transition: all;
+    animation-fill-mode: forwards;
+}
+
+/* div-main-text-header */
+
+.div-main-text-header{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+
+.div-main-p-header{
+    margin-top: 30px;
+}
+
+
+/* animation>years&ofaction */
+
+@keyframes years-ofaction {
+    0%{
+        width: none;
+    }
+    100%{
+        width: 100%;
+        transform: translateX(-200px);
+    }
+}
+
+/* svg-10years%ofaction */
+
+.svg-10years{
+    animation-name: years-ofaction;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.svg-ofaction{
+    animation-name: years-ofaction;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+/* animation>paragraph (header) */
+
+@keyframes paragraph {
+    0%{
+        /* width: none; */
+    }
+    100%{
+        /* width: 100%; */
+        transform: translateX(-200px);
+    }
+}
+
+.div-main-p-header{
+    animation-name: paragraph;
+    animation-duration:2s ;
+    animation-fill-mode: forwards;
+
+}
