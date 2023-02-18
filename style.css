@@ -301,6 +301,7 @@ li{
     animation-name: paragraph;
     animation-duration:2s ;
     animation-fill-mode: forwards;
+}
 /* what-we-do start.................. */
 #what-we-do{
     background-image: url(image/block_bg.jpg);
