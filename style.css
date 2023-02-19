@@ -293,11 +293,15 @@ li{
     }
     100%{
         /* width: 100%; */
-        transform: translateX(-100px);
+        transform: translateX(-200px);
     }
 }
 
 .div-main-p-header{
+    margin-top: 30px;
+}
+
+.div-p-header{
     animation-name: paragraph;
     animation-duration:2s ;
     animation-fill-mode: forwards;
