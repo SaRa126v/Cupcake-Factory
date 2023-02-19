@@ -97,7 +97,7 @@ li{
     margin-top: 5px;
 }
 
-.asdf:hover>ul {
+.div-top-header>ul>li:hover>ul {
     animation-name: ul-flag-icon-header;
     animation-duration: 0.7s;
     display: inline-block;
@@ -293,7 +293,7 @@ li{
     }
     100%{
         /* width: 100%; */
-        transform: translateX(-200px);
+        transform: translateX(-100px);
     }
 }
 
