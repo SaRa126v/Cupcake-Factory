@@ -19,6 +19,7 @@ Sheyda:
 role: Scrum Master
 1.PowerPoint
 2.Our Blogs
+Sheidam355@gmail.com
 
 Sara:
 role: Presenter

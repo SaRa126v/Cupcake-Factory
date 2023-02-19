@@ -1,3 +1,214 @@
+/* General */
+
+:root {
+ --white: #fcfcfc;
+}
+
 body {
- background-color: rgb(32, 32, 77);
+ margin-top: 0%;
+ background-color: hsl(240, 35%, 22%);
+}
+
+main .container {
+ width: 1200px;
+ margin: 0 auto;
+ background-color: darksalmon;
+}
+
+p,
+a,
+span,
+li,
+h1,
+h2,
+h3 {
+ color: var(--white);
+ font-family: 'Montserrat';
+}
+
+p {
+ line-height: 200%
+}
+
+p,
+a,
+span,
+li {
+ font-size: 58%;
+}
+
+/* Landing Section ...............................................*/
+
+#landing .container {
+ background-image: url(img/landing\ background.jpg);
+ width: 2500px;
+ height: 1000px;
+ box-sizing: border-box;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+#landing .container h1 {
+ font-size: 550%;
+}
+
+#landing .container h1>span {
+ font-weight: lighter;
+}
+
+#landing .container p {
+ font-size: 150%;
+ width: 50%;
+ text-align: center;
+ line-height: 200%;
+ margin-bottom: 20%;
+}
+
+/* Menu Section .................................................*/
+
+#menu .container {
+ height: 100px;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+
+/* Menu Left */
+
+#menu .menuL {
+ width: 30%;
+}
+
+#menu .container ul {
+ display: inline-block;
+ padding: 0%;
+ width: 100%;
+}
+
+#menu .container li {
+ display: inline-block;
+ padding: 0.5% 1%;
+}
+
+#menu .container span {
+ font-size: 100%;
+}
+
+#menu .menuL a {
+ font-size: 100%;
+ text-decoration: none;
+ color: rgb(140, 114, 163);
+ transition: color 0.35s;
+}
+
+#menu .menuL li:nth-of-type(2) {
+ border-left: 1px solid var(--white);
+ border-right: 1px solid var(--white);
+}
+
+/* Menu Right */
+
+#menu .menuR {
+ width: 12%;
+}
+
+#menu .menuR a {
+ text-decoration: none;
+ padding: 3%;
+ color: #ff3333;
+ font-size: 100%;
+ vertical-align: middle;
+ transition: color 0.35s;
+}
+
+#menu .menuR svg {
+ vertical-align: middle;
+ transition: fill 0.35s;
+}
+
+#menu .menuR a:hover svg,
+#menu a:hover {
+ fill: rgb(104, 104, 104);
+ color: rgb(104, 104, 104);
+}
+
+/* Headphone, pen, keyboard Section .................................................*/
+
+/* problemmmmmmmmmmmmmmmmmmm: کانتینرها شبیه همن  + از دیو بیرون نزنن*/
+
+#headphone .container,
+#pen .container,
+#keyboard .container {
+ height: 600px;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+
+#headphone>.container>div,
+#pen>.container>div,
+#keyboard>.container>div {
+ width: 48%;
+}
+
+#headphone img,
+#pen img,
+#keyboard img {
+ width: 100%;
+}
+
+h2 {
+ font-size: 100%;
+}
+
+
+/* Headphone Section .................................................*/
+
+
+#headphone ul {
+ list-style-image: url(img/pink\ next\ icon.svg);
+ padding-left: 3%;
+ margin-top: 2%;
+}
+#headphone ul > li {
+ font-size: 100%;
+ padding: 0%;
+}
+p {
+ margin: 0%;
+}
+
+/* Pen Section .................................................*/
+
+#pen .paragraphs {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+
+#pen .paragraphs p:first-of-type:first-letter {
+ font-size: 200%;
+}
+
+/* Keyboard Section .................................................*/
+
+#keyboard ul {
+ list-style: none;
+ padding: 0%;
+}
+#keyboard ul > li {
+ font-size: 100%;
+border: 1px solid ;
+}
+
+#keyboard span:nth-last-of-type(1) {
+color: hotpink;
 }
