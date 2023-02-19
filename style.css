@@ -311,9 +311,9 @@ li{
     line-height: 30px;
 }
 #what-we-do>.container{
-    width: 1200px;
-    margin: 0 auto;
-}
+   width: 1200px;
+   margin: 0 auto;
+   }
 .title-what-we-do{
     display: flex;
     justify-content: center;
@@ -332,6 +332,7 @@ li{
     height: 250px;
     padding-left: 30px;
     margin-bottom: 20px;
+    padding-top: 30px;
 }
 .Making-It-Brilliant>h4{
     font-size: 30px;
@@ -351,7 +352,7 @@ li{
 }
 .box-what-we-do>div{
     width: 350px;
-    height: 360px;
+    height: 370px;
     text-align: center;
     background-color: rgb(240, 243, 242);
     transition: all .3s;
@@ -378,6 +379,7 @@ li{
     width: 300px;
     height: 310px;
     margin: 0 auto;
+    padding: 20px;
 }
 .box-what-we-do svg{
     width: 100px;
@@ -389,11 +391,10 @@ li{
 .box-what-we-do h4{
     font-size: 27px;
     margin-top: 10px;
-    /* line-height: 30px; */
+    margin-bottom: 10px;
 }
 .box-what-we-do p{
     font-size: 18px;
     opacity: 0.5;
-    /* line-height: 27px; */
 }
 /* what-we-do...................... */
