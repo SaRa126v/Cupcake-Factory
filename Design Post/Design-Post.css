@@ -12,7 +12,7 @@ body {
 main .container {
  width: 1200px;
  margin: 0 auto;
- background-color: darksalmon;
+ /* background-color: darksalmon; */
 }
 
 p,
@@ -26,22 +26,26 @@ h3 {
  font-family: 'Montserrat';
 }
 
-p {
- line-height: 200%
-}
-
 p,
 a,
 span,
 li {
- font-size: 58%;
+ font-size: 57.75%;
+}
+
+p {
+ line-height: 200%
 }
 
 /* Landing Section ...............................................*/
 
-#landing .container {
+#landing {
  background-image: url(img/landing\ background.jpg);
- width: 2500px;
+width: 2500px;
+margin: 0 auto;
+}
+
+#landing .container {
  height: 1000px;
  box-sizing: border-box;
 
@@ -57,11 +61,11 @@ li {
 
 #landing .container h1>span {
  font-weight: lighter;
+ font-size: 100%;
 }
 
 #landing .container p {
  font-size: 150%;
- width: 50%;
  text-align: center;
  line-height: 200%;
  margin-bottom: 20%;
@@ -102,7 +106,7 @@ li {
 #menu .menuL a {
  font-size: 100%;
  text-decoration: none;
- color: rgb(140, 114, 163);
+ color: rgb(240, 126, 255);
  transition: color 0.35s;
 }
 
@@ -177,10 +181,12 @@ h2 {
  padding-left: 3%;
  margin-top: 2%;
 }
-#headphone ul > li {
+
+#headphone ul>li {
  font-size: 100%;
  padding: 0%;
 }
+
 p {
  margin: 0%;
 }
@@ -201,14 +207,92 @@ p {
 /* Keyboard Section .................................................*/
 
 #keyboard ul {
- list-style: none;
+ list-style: decimal;
  padding: 0%;
 }
-#keyboard ul > li {
- font-size: 100%;
-border: 1px solid ;
+
+#keyboard ul>li {
+ font-size: 130%;
+ border: 1px solid rgb(20, 116, 119);
+ padding: 3%;
 }
 
-#keyboard span:nth-last-of-type(1) {
-color: hotpink;
+/* #keyboard ul > li:nth-of-type(1)::before {
+ content: 1;
+ background-color: rgb(246, 180, 255);
+ color: var(--white);
+} */
+
+#keyboard li:nth-of-type(1) span {
+ color: rgb(246, 180, 255);
 }
+
+#keyboard li:nth-of-type(2) span {
+ color: rgb(158, 164, 255);
+}
+
+#keyboard li:nth-of-type(3) span {
+ color: rgb(210, 155, 255);
+}
+
+/* media Section .................................................*/
+
+#media .container {
+ height: 300px;
+}
+
+
+
+
+
+
+
+
+/* Admin Section .................................................*/
+
+#admin .container {
+ height: 300px;
+background-color: rgb(68, 68, 90);
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+}
+
+/* admin section > profile  */
+
+#admin .profile {
+ width: 12%;
+}
+
+#admin img {
+ width: 100%;
+}
+
+/* admin section > paragraph */
+
+#admin .adminP {
+ width: 85%;
+}
+#admin .adminP h3 {
+margin-bottom: 1%;
+}
+#admin .adminP h3 > span {
+ font-weight: normal;
+}
+
+#admin .adminP a {
+text-decoration: none;
+color: rgb(240, 126, 255);
+transition: color 0.35s;
+}
+#admin .adminP svg {
+ transition: fill 0.35s;
+}
+
+#admin .adminP a:hover,
+#admin .adminP a:hover svg {
+ fill: rgb(104, 104, 104);
+ color: rgb(104, 104, 104);
+ }
