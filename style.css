@@ -97,7 +97,7 @@ li{
     margin-top: 5px;
 }
 
-.asdf:hover>ul {
+.div-top-header>ul>li:hover>ul {
     animation-name: ul-flag-icon-header;
     animation-duration: 0.7s;
     display: inline-block;
@@ -298,6 +298,10 @@ li{
 }
 
 .div-main-p-header{
+    margin-top: 30px;
+}
+
+.div-p-header{
     animation-name: paragraph;
     animation-duration:2s ;
     animation-fill-mode: forwards;
