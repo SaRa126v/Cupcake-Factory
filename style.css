@@ -303,17 +303,22 @@ li{
     animation-fill-mode: forwards;
 }
 /* what-we-do start.................. */
+main .container{
+    width: 1200px;
+    margin: 0 auto;
+}
 #what-we-do{
     background-image: url(image/block_bg.jpg);
+    background-size: contain;
     background-size: cover;
     background-position: center;
     height: 1000px;
     line-height: 30px;
 }
-#what-we-do>.container{
+/* #what-we-do>.container{
    width: 1200px;
    margin: 0 auto;
-   }
+   } */
 .title-what-we-do{
     display: flex;
     justify-content: center;
@@ -397,4 +402,115 @@ li{
     font-size: 18px;
     opacity: 0.5;
 }
-/* what-we-do...................... */
+/* what-we-do end...................... */
+
+/* latest works START..................... */
+#latest-works{
+    background-image: url(image/pf-rave.jpg);
+    color: rgb(255, 255, 255);
+}
+.title-latest-works{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 70px;
+   padding-bottom: 90px;
+}
+.title-latest-works span:nth-of-type(2){
+    font-weight: bold;
+    margin-left: 20px;
+}
+.box-latest-works{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 110px;
+}
+.box-latest-works>div{
+    width: 400px;
+    height: 252px;
+    position: relative;
+}
+.box-latest-works>div img{
+    width: 100%;
+    height: 100%;
+}
+.box-latest-works>div>div:first-of-type{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-55%,-55%); */
+    /* bottom: 0;
+    right: 0; */
+    opacity: 1;
+    width: 0px;
+    height: 0px;
+    transition: all .2s linear;
+    border-radius: 100%;
+}
+.box-latest-works>div:hover div:first-of-type{
+    background-color:rgba(0,188,212,.75);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    /* bottom: 0;
+    right: 0; */
+    width: 400px;
+    height: 250px;
+    border-radius: 0;
+}
+.box-latest-works>div>div:nth-of-type(2) svg{
+transition: all .2s ease;
+transform: translate(20px,-60px);
+opacity: 0;
+margin-right: 5px;
+border-bottom: 1 solid #ffff;
+}
+.box-latest-works>div:hover>div:nth-of-type(2) svg{
+    opacity: 1;
+    transform: translate(20px,-230px);
+}
+.svg-border{
+    top: 73px;
+    left: 17px;
+    position: absolute;
+    height: 3px;
+    width: 0;
+background-color: #ffff;
+opacity: 0;
+transition: width .2s;
+}
+.box-latest-works>div:hover .svg-border{
+opacity: 1;
+width: 90%;
+}
+.box-latest-works>div>div:nth-of-type(4){
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 18px;
+}
+/* input START................... */
+#latest-works .input-load-more{
+    padding-top: 50px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+#latest-works input{
+    padding: 15px 30px;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(206, 147, 216);
+    color: #ffff;
+    transition: all .2s;
+    transition-delay: .1s;
+}
+/* input END...................... */
+#latest-works input:hover{
+    background-color: #ffff;
+    color: rgb(206, 147, 216);
+}
