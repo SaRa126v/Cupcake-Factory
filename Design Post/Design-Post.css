@@ -12,7 +12,6 @@ body {
 main .container {
  width: 1200px;
  margin: 0 auto;
- /* background-color: darksalmon; */
 }
 
 p,
@@ -41,8 +40,8 @@ p {
 
 #landing {
  background-image: url(img/landing\ background.jpg);
-width: 2500px;
-margin: 0 auto;
+ width: 2500px;
+ margin: 0 auto;
 }
 
 #landing .container {
@@ -141,9 +140,7 @@ margin: 0 auto;
  color: rgb(104, 104, 104);
 }
 
-/* Headphone, pen, keyboard Section .................................................*/
-
-/* problemmmmmmmmmmmmmmmmmmm: کانتینرها شبیه همن  + از دیو بیرون نزنن*/
+/* Headphone, pen, keyboard Section ..................................*/
 
 #headphone .container,
 #pen .container,
@@ -172,6 +169,59 @@ h2 {
  font-size: 100%;
 }
 
+/* Hover Animation */
+
+.imgBehind {
+ position: relative;
+animation: up 2s ;
+
+}
+.imgFront {
+ width: 100.5%;
+ height: 98.5%;
+ background-color:rgba(65, 27, 100, 0.603) ;
+ position: absolute;
+top: -0.01%;
+left: -0.01%;
+visibility: hidden;
+}
+
+.imgBehind:hover .imgFront {
+ visibility: visible;
+}
+.imgBehind:hover .imgFront svg {
+ animation: fall 0.65s forwards;
+}
+
+.imgFront svg {
+ margin: 35% 45%;
+}
+
+@keyframes fall {
+
+0% {
+ margin: 0% 45%;
+}
+
+ 100% {
+  margin: 35% 45%;
+ }
+}
+
+/* On scroll  Animation */
+
+@keyframes up {
+
+0% {
+top: 10%;
+visibility: hidden; 
+}
+ 
+ 100% {
+  top: 0%;
+  visibility: visible;
+ } 
+}
 
 /* Headphone Section .................................................*/
 
@@ -200,50 +250,189 @@ p {
  align-items: center;
 }
 
-#pen .paragraphs p:first-of-type:first-letter {
- font-size: 200%;
+#pen .paragraphs div {
+ width: 49%;
+ overflow: hidden;
 }
+
+
+#pen .hexagon {
+ display: inline-block;
+ background-image: url(img/hexagon-svgrepo-com.svg);
+}
+
+#pen .hexagon span {
+ font-size: large;
+}
+
+
+
 
 /* Keyboard Section .................................................*/
 
 #keyboard ul {
- list-style: decimal;
+ list-style: none;
  padding: 0%;
+ counter-reset: list;
+ margin-top: 10%;
 }
 
 #keyboard ul>li {
  font-size: 130%;
- border: 1px solid rgb(20, 116, 119);
+ border: 1px solid rgba(18, 102, 105, 0.534);
  padding: 3%;
 }
 
-/* #keyboard ul > li:nth-of-type(1)::before {
- content: 1;
- background-color: rgb(246, 180, 255);
+#keyboard ul li::before {
+ margin-right: 6%;
+ counter-increment: list;
+ content: counter(list);
  color: var(--white);
-} */
+ border-radius: 50%;
+ padding: 1% 3%;
+}
+
+#keyboard ul li:nth-of-type(1)::before {
+ background-color: rgb(246, 180, 255);
+ padding: 1% 3.5%;
+}
 
 #keyboard li:nth-of-type(1) span {
  color: rgb(246, 180, 255);
+}
+
+#keyboard ul li:nth-of-type(2)::before {
+ background-color: rgb(158, 164, 255);
 }
 
 #keyboard li:nth-of-type(2) span {
  color: rgb(158, 164, 255);
 }
 
+#keyboard ul li:nth-of-type(3)::before {
+ background-color: rgb(210, 155, 255);
+}
+
 #keyboard li:nth-of-type(3) span {
  color: rgb(210, 155, 255);
+}
+
+/*  li appearing Animation */
+
+#keyboard li:nth-of-type(1) {
+ animation: appearing1 2s ;
+}
+
+#keyboard li:nth-of-type(2) {
+ animation: appearing2 2s 0.25s;
+}
+
+#keyboard li:nth-of-type(3) {
+ animation: appearing3 2s 0.5s;
+}
+
+@keyframes appearing1 {
+ 0% {
+  visibility: hidden;
+  top: 10%;
+   }
+   
+   100% {
+    top: 0%;
+    visibility: visible;
+   } 
+}
+
+@keyframes appearing2 {
+ 0% {
+  visibility: hidden;
+  top: 20%;
+   }
+   
+   100% {
+    top: 0%;
+    visibility: visible;
+   } 
+}
+
+
+@keyframes appearing3 {
+ 0% {
+  visibility: hidden;
+  top: 40%;
+   }
+   
+   100% {
+    top: 0%;
+    visibility: visible;
+   } 
 }
 
 /* media Section .................................................*/
 
 #media .container {
- height: 300px;
+ height: 250px;
 }
 
+/* media tags */
 
+#media .mediaTags {
+ display: flex;
+ flex-direction: row;
+ justify-content: left;
+ align-items: center;
 
+ margin-bottom: 6%;
+}
 
+#media .tagBackground {
+background-image: url(img/tag-svgrepo-com.png);
+
+width:8%;
+height:8%;
+}
+
+#media .mediaTags a {
+ text-decoration: none;
+ transition: color 0.25s;
+}
+#media .mediaTags a:hover {
+color: hsl(240, 35%, 22%);
+}
+
+/* media icons */
+
+#media svg {
+ transition: fill 0.25s;
+}
+
+#media .mediaIcons a:not(a:last-of-type) {
+ margin-right: 1%;
+}
+
+#media .mediaIcons a:nth-of-type(1) svg:hover {
+ fill: rgb(201, 38, 38);
+}
+
+#media .mediaIcons a:nth-of-type(2) svg:hover {
+ fill: rgb(60, 79, 255);
+}
+
+#media .mediaIcons a:nth-of-type(3) svg:hover {
+ fill: rgb(37, 88, 95);
+}
+
+#media .mediaIcons a:nth-of-type(4) svg:hover {
+ fill: rgb(212, 31, 70);
+}
+
+#media .mediaIcons a:nth-of-type(5) svg:hover {
+ fill: rgb(4, 119, 172);
+}
+
+#media .mediaIcons a:nth-of-type(6) svg:hover {
+ fill: rgb(97, 40, 255);
+}
 
 
 
@@ -252,7 +441,7 @@ p {
 
 #admin .container {
  height: 300px;
-background-color: rgb(68, 68, 90);
+ background-color: rgb(68, 68, 90);
 
  display: flex;
  flex-direction: row;
@@ -275,18 +464,21 @@ background-color: rgb(68, 68, 90);
 #admin .adminP {
  width: 85%;
 }
+
 #admin .adminP h3 {
-margin-bottom: 1%;
+ margin-bottom: 1%;
 }
-#admin .adminP h3 > span {
+
+#admin .adminP h3>span {
  font-weight: normal;
 }
 
 #admin .adminP a {
-text-decoration: none;
-color: rgb(240, 126, 255);
-transition: color 0.35s;
+ text-decoration: none;
+ color: rgb(240, 126, 255);
+ transition: color 0.35s;
 }
+
 #admin .adminP svg {
  transition: fill 0.35s;
 }
@@ -295,4 +487,4 @@ transition: color 0.35s;
 #admin .adminP a:hover svg {
  fill: rgb(104, 104, 104);
  color: rgb(104, 104, 104);
- }
+}
