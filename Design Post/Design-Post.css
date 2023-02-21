@@ -1,17 +1,17 @@
 /* General */
 
 :root {
- --white: #fcfcfc;
+   --white: #fcfcfc;
 }
 
 body {
- margin-top: 0%;
- background-color: hsl(240, 35%, 22%);
+   margin-top: 0%;
+   background-color: hsl(240, 35%, 22%);
 }
 
 main .container {
- width: 1200px;
- margin: 0 auto;
+   width: 1200px;
+   margin: 0 auto;
 }
 
 p,
@@ -21,123 +21,123 @@ li,
 h1,
 h2,
 h3 {
- color: var(--white);
- font-family: 'Montserrat';
+   color: var(--white);
+   font-family: 'Montserrat';
 }
 
 p,
 a,
 span,
 li {
- font-size: 57.75%;
+   font-size: 57.75%;
 }
 
 p {
- line-height: 200%
+   line-height: 200%
 }
 
 /* Landing Section ...............................................*/
 
 #landing {
- background-image: url(img/landing\ background.jpg);
- width: 2500px;
- margin: 0 auto;
+   background-image: url(img/landing\ background.jpg);
+   width: 2500px;
+   margin: 0 auto;
 }
 
 #landing .container {
- height: 1000px;
- box-sizing: border-box;
+   height: 1000px;
+   box-sizing: border-box;
 
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 #landing .container h1 {
- font-size: 550%;
+   font-size: 550%;
 }
 
 #landing .container h1>span {
- font-weight: lighter;
- font-size: 100%;
+   font-weight: lighter;
+   font-size: 100%;
 }
 
 #landing .container p {
- font-size: 150%;
- text-align: center;
- line-height: 200%;
- margin-bottom: 20%;
+   font-size: 150%;
+   text-align: center;
+   line-height: 200%;
+   margin-bottom: 20%;
 }
 
 /* Menu Section .................................................*/
 
 #menu .container {
- height: 100px;
+   height: 100px;
 
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
 }
 
 /* Menu Left */
 
 #menu .menuL {
- width: 30%;
+   width: 30%;
 }
 
 #menu .container ul {
- display: inline-block;
- padding: 0%;
- width: 100%;
+   display: inline-block;
+   padding: 0%;
+   width: 100%;
 }
 
 #menu .container li {
- display: inline-block;
- padding: 0.5% 1%;
+   display: inline-block;
+   padding: 0.5% 1%;
 }
 
 #menu .container span {
- font-size: 100%;
+   font-size: 100%;
 }
 
 #menu .menuL a {
- font-size: 100%;
- text-decoration: none;
- color: rgb(240, 126, 255);
- transition: color 0.35s;
+   font-size: 100%;
+   text-decoration: none;
+   color: rgb(240, 126, 255);
+   transition: color 0.35s;
 }
 
 #menu .menuL li:nth-of-type(2) {
- border-left: 1px solid var(--white);
- border-right: 1px solid var(--white);
+   border-left: 1px solid var(--white);
+   border-right: 1px solid var(--white);
 }
 
 /* Menu Right */
 
 #menu .menuR {
- width: 12%;
+   width: 12%;
 }
 
 #menu .menuR a {
- text-decoration: none;
- padding: 3%;
- color: #ff3333;
- font-size: 100%;
- vertical-align: middle;
- transition: color 0.35s;
+   text-decoration: none;
+   padding: 3%;
+   color: #ff3333;
+   font-size: 100%;
+   vertical-align: middle;
+   transition: color 0.35s;
 }
 
 #menu .menuR svg {
- vertical-align: middle;
- transition: fill 0.35s;
+   vertical-align: middle;
+   transition: fill 0.35s;
 }
 
 #menu .menuR a:hover svg,
 #menu a:hover {
- fill: rgb(104, 104, 104);
- color: rgb(104, 104, 104);
+   fill: rgb(104, 104, 104);
+   color: rgb(104, 104, 104);
 }
 
 /* Headphone, pen, keyboard Section ..................................*/
@@ -145,124 +145,126 @@ p {
 #headphone .container,
 #pen .container,
 #keyboard .container {
- height: 600px;
+   height: 600px;
 
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
 }
 
 #headphone>.container>div,
 #pen>.container>div,
 #keyboard>.container>div {
- width: 48%;
+   width: 48%;
 }
 
 #headphone img,
 #pen img,
 #keyboard img {
- width: 100%;
+   width: 100%;
 }
 
 h2 {
- font-size: 100%;
+   font-size: 100%;
 }
 
-/* Hover Animation */
+/* Fall Animation */
 
 .imgBehind {
- position: relative;
-animation: up 2s ;
-
+   position: relative;
+   animation: up 2s forwards;
+   visibility: hidden;
 }
+
 .imgFront {
- width: 100.5%;
- height: 98.5%;
- background-color:rgba(65, 27, 100, 0.603) ;
- position: absolute;
-top: -0.01%;
-left: -0.01%;
-visibility: hidden;
+   width: 100.5%;
+   height: 98.5%;
+   background-color: rgba(65, 27, 100, 0.603);
+   position: absolute;
+   top: -0.01%;
+   left: -0.01%;
+   visibility: hidden;
 }
 
 .imgBehind:hover .imgFront {
- visibility: visible;
+   visibility: visible;
 }
+
 .imgBehind:hover .imgFront svg {
- animation: fall 0.65s forwards;
+   animation: fall 0.65s forwards;
 }
 
 .imgFront svg {
- margin: 35% 45%;
+   margin: 35% 45%;
 }
 
 @keyframes fall {
 
-0% {
- margin: 0% 45%;
+   0% {
+      margin: 0% 45%;
+   }
+
+   100% {
+      margin: 35% 45%;
+   }
 }
 
- 100% {
-  margin: 35% 45%;
- }
-}
-
-/* On scroll  Animation */
+/* Up  Animation */
 
 @keyframes up {
 
-0% {
-top: 10%;
-visibility: hidden; 
-}
- 
- 100% {
-  top: 0%;
-  visibility: visible;
- } 
+   from {
+      visibility: hidden;
+      transform: translateY(10%);
+   }
+
+   to {
+      visibility: visible;
+      transform: translateY(0%);
+   }
 }
 
 /* Headphone Section .................................................*/
 
 
 #headphone ul {
- list-style-image: url(img/pink\ next\ icon.svg);
- padding-left: 3%;
- margin-top: 2%;
+   list-style-image: url(img/pink\ next\ icon.svg);
+   padding-left: 3%;
+   margin-top: 2%;
 }
 
 #headphone ul>li {
- font-size: 100%;
- padding: 0%;
+   font-size: 100%;
+   padding: 0%;
 }
 
 p {
- margin: 0%;
+   margin: 0%;
 }
 
 /* Pen Section .................................................*/
 
 #pen .paragraphs {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
 }
 
 #pen .paragraphs div {
- width: 49%;
- overflow: hidden;
+   width: 49%;
+   overflow: hidden;
 }
 
 
 #pen .hexagon {
- display: inline-block;
- background-image: url(img/hexagon-svgrepo-com.svg);
+   display: inline-block;
+   background-image: url(img/hexagon-svgrepo-com.svg);
 }
 
 #pen .hexagon span {
- font-size: large;
+   font-size: large;
 }
 
 
@@ -271,167 +273,152 @@ p {
 /* Keyboard Section .................................................*/
 
 #keyboard ul {
- list-style: none;
- padding: 0%;
- counter-reset: list;
- margin-top: 10%;
+   list-style: none;
+   padding: 0%;
+   counter-reset: list;
+   margin-top: 10%;
+   box-sizing: content-box;
 }
 
 #keyboard ul>li {
- font-size: 130%;
- border: 1px solid rgba(18, 102, 105, 0.534);
- padding: 3%;
+   font-size: 130%;
+   border: 1px solid rgba(18, 102, 105, 0.534);
+   padding: 3%;
 }
 
 #keyboard ul li::before {
- margin-right: 6%;
- counter-increment: list;
- content: counter(list);
- color: var(--white);
- border-radius: 50%;
- padding: 1% 3%;
+   margin-right: 6%;
+   counter-increment: list;
+   content: counter(list);
+   color: var(--white);
+   border-radius: 50%;
+   padding: 1% 3%;
 }
 
 #keyboard ul li:nth-of-type(1)::before {
- background-color: rgb(246, 180, 255);
- padding: 1% 3.5%;
+   background-color: rgb(246, 180, 255);
+   padding: 1% 3.5%;
 }
 
 #keyboard li:nth-of-type(1) span {
- color: rgb(246, 180, 255);
+   color: rgb(246, 180, 255);
 }
 
 #keyboard ul li:nth-of-type(2)::before {
- background-color: rgb(158, 164, 255);
+   background-color: rgb(158, 164, 255);
 }
 
 #keyboard li:nth-of-type(2) span {
- color: rgb(158, 164, 255);
+   color: rgb(158, 164, 255);
 }
 
 #keyboard ul li:nth-of-type(3)::before {
- background-color: rgb(210, 155, 255);
+   background-color: rgb(210, 155, 255);
 }
 
 #keyboard li:nth-of-type(3) span {
- color: rgb(210, 155, 255);
+   color: rgb(210, 155, 255);
 }
 
 /*  li appearing Animation */
 
-#keyboard li:nth-of-type(1) {
- animation: appearing1 2s ;
+#keyboard ul>li:nth-of-type(1) {
+   animation: appearing 2s forwards;
+visibility: hidden;
 }
 
-#keyboard li:nth-of-type(2) {
- animation: appearing2 2s 0.25s;
+#keyboard ul>li:nth-of-type(2) {
+   animation: appearing 2s 0.5s forwards;
+   visibility: hidden;
 }
 
-#keyboard li:nth-of-type(3) {
- animation: appearing3 2s 0.5s;
+#keyboard ul>li:nth-of-type(3) {
+   animation: appearing 2s 1s forwards;
+   visibility: hidden;
 }
 
-@keyframes appearing1 {
- 0% {
-  visibility: hidden;
-  top: 10%;
+
+@keyframes appearing {
+ from {
+      visibility: hidden;
+      transform: translateY(60%);
    }
-   
-   100% {
-    top: 0%;
-    visibility: visible;
-   } 
-}
 
-@keyframes appearing2 {
- 0% {
-  visibility: hidden;
-  top: 20%;
+   to {
+      visibility: visible;
+      transform: translateY(0%);
    }
-   
-   100% {
-    top: 0%;
-    visibility: visible;
-   } 
-}
-
-
-@keyframes appearing3 {
- 0% {
-  visibility: hidden;
-  top: 40%;
-   }
-   
-   100% {
-    top: 0%;
-    visibility: visible;
-   } 
 }
 
 /* media Section .................................................*/
 
 #media .container {
- height: 250px;
+   height: 250px;
 }
 
 /* media tags */
 
 #media .mediaTags {
- display: flex;
- flex-direction: row;
- justify-content: left;
- align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: left;
+   align-items: center;
 
- margin-bottom: 6%;
+   margin-bottom: 6%;
 }
 
 #media .tagBackground {
-background-image: url(img/tag-svgrepo-com.png);
+   background-image: url(img/tag2.svg);
+   background-repeat:no-repeat;
+   background-color: #ff3333;
+   border: 1px solid steelblue;
 
-width:8%;
-height:8%;
+   width: 8%;
+   height: 20%;
+text-align: center;
 }
 
 #media .mediaTags a {
- text-decoration: none;
- transition: color 0.25s;
+   text-decoration: none;
+   transition: color 0.25s;
 }
+
 #media .mediaTags a:hover {
-color: hsl(240, 35%, 22%);
+   color: hsl(240, 35%, 22%);
 }
 
 /* media icons */
 
 #media svg {
- transition: fill 0.25s;
+   transition: fill 0.25s;
 }
 
 #media .mediaIcons a:not(a:last-of-type) {
- margin-right: 1%;
+   margin-right: 1%;
 }
 
 #media .mediaIcons a:nth-of-type(1) svg:hover {
- fill: rgb(201, 38, 38);
+   fill: rgb(201, 38, 38);
 }
 
 #media .mediaIcons a:nth-of-type(2) svg:hover {
- fill: rgb(60, 79, 255);
+   fill: rgb(60, 79, 255);
 }
 
 #media .mediaIcons a:nth-of-type(3) svg:hover {
- fill: rgb(37, 88, 95);
+   fill: rgb(37, 88, 95);
 }
 
 #media .mediaIcons a:nth-of-type(4) svg:hover {
- fill: rgb(212, 31, 70);
+   fill: rgb(212, 31, 70);
 }
 
 #media .mediaIcons a:nth-of-type(5) svg:hover {
- fill: rgb(4, 119, 172);
+   fill: rgb(4, 119, 172);
 }
 
 #media .mediaIcons a:nth-of-type(6) svg:hover {
- fill: rgb(97, 40, 255);
+   fill: rgb(97, 40, 255);
 }
 
 
@@ -440,51 +427,51 @@ color: hsl(240, 35%, 22%);
 /* Admin Section .................................................*/
 
 #admin .container {
- height: 300px;
- background-color: rgb(68, 68, 90);
+   height: 300px;
+   background-color: rgb(68, 68, 90);
 
- display: flex;
- flex-direction: row;
- justify-content: space-around;
- align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
 }
 
 /* admin section > profile  */
 
 #admin .profile {
- width: 12%;
+   width: 12%;
 }
 
 #admin img {
- width: 100%;
+   width: 100%;
 }
 
 /* admin section > paragraph */
 
 #admin .adminP {
- width: 85%;
+   width: 85%;
 }
 
 #admin .adminP h3 {
- margin-bottom: 1%;
+   margin-bottom: 1%;
 }
 
 #admin .adminP h3>span {
- font-weight: normal;
+   font-weight: normal;
 }
 
 #admin .adminP a {
- text-decoration: none;
- color: rgb(240, 126, 255);
- transition: color 0.35s;
+   text-decoration: none;
+   color: rgb(240, 126, 255);
+   transition: color 0.35s;
 }
 
 #admin .adminP svg {
- transition: fill 0.35s;
+   transition: fill 0.35s;
 }
 
 #admin .adminP a:hover,
 #admin .adminP a:hover svg {
- fill: rgb(104, 104, 104);
- color: rgb(104, 104, 104);
+   fill: rgb(104, 104, 104);
+   color: rgb(104, 104, 104);
 }
