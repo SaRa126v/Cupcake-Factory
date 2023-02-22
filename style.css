@@ -594,3 +594,79 @@ margin: 0 auto;
     line-height: 29px;
 }
 /* sectin our pricess end🎇🎇🎇🎇🎇🎇🎇🎉 */
+button,a,p,h1,h2{
+    font-family: 'Montserrat', sans-serif;;
+ }
+
+.texts{
+    float: left;
+    margin-left:-110px;
+    margin: 0% auto;
+}
+.texts p{
+    margin-top: 50px;
+    font-size: 14px;
+    color: #B6C6C9;
+    overflow-wrap: break-word;
+    line-height: 25px;
+    font-weight: 300;
+}
+.texts h1{ 
+    margin-top: 50px;
+    color: #B6C6C9;
+    font-size: 30px;
+    font-weight:700;
+}
+.texts video{
+    margin-left: -330px;
+    height: 629.5px;
+    margin-top:-650px ;
+    height: 725px;
+    
+}
+
+.texts button,h1,p,img{
+    position: relative;
+    z-index: 3;
+    margin-top: -1200px;
+}
+
+.txt{
+    margin-bottom: 100px;
+}
+.texts button{
+    background-color:#d698e9;
+    padding:28px 65px 28px 65px ;
+    font-size: 36px;
+    border-radius: 70px 70px ;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+}
+.texts button:hover{
+    background-color: #B6C6C9;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.name-of-section h1{
+    font-weight: 100;
+    margin-left: 500px;
+    margin-top: 12px;
+    margin-bottom: 100px;
+}
+.star{
+    background-color: #b6c6c949;
+    margin-top: -400px;
+    float: right;
+    margin-right:400px;
+    position: relative;
+    padding: 30px 40px 30px 100px ;
+}
+.star h1{
+    font-weight: 200;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: -70px;
+    text-align: center;
+}
