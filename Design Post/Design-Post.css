@@ -9,6 +9,10 @@ body {
    background-color: hsl(240, 35%, 22%);
 }
 
+* {
+   box-sizing: border-box;
+}
+
 main .container {
    width: 1200px;
    margin: 0 auto;
@@ -252,23 +256,24 @@ p {
    align-items: center;
 }
 
-#pen .paragraphs div {
+#pen .paragraphs > div {
    width: 49%;
-   overflow: hidden;
+   
+   line-height: 0%;
 }
 
+#pen .letter > div {
+   display: inline-block;
+}
 
 #pen .hexagon {
-   display: inline-block;
-   background-image: url(img/hexagon-svgrepo-com.svg);
+   width: 90px;
+   height: 70px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 80%;
+   background-image: url(img/hexagon\ final.png);
 }
-
-#pen .hexagon span {
-   font-size: large;
-}
-
-
-
 
 /* Keyboard Section .................................................*/
 
@@ -324,7 +329,7 @@ p {
 
 #keyboard ul>li:nth-of-type(1) {
    animation: appearing 2s forwards;
-visibility: hidden;
+   visibility: hidden;
 }
 
 #keyboard ul>li:nth-of-type(2) {
@@ -339,7 +344,7 @@ visibility: hidden;
 
 
 @keyframes appearing {
- from {
+   from {
       visibility: hidden;
       transform: translateY(60%);
    }
@@ -361,26 +366,27 @@ visibility: hidden;
 #media .mediaTags {
    display: flex;
    flex-direction: row;
-   justify-content: left;
+   justify-content: space-between;
    align-items: center;
 
+   width: 70%;
    margin-bottom: 6%;
 }
 
 #media .tagBackground {
-   background-image: url(img/tag2.svg);
-   background-repeat:no-repeat;
-   background-color: #ff3333;
-   border: 1px solid steelblue;
-
-   width: 8%;
-   height: 20%;
-text-align: center;
+   background-image: url(img/tag\ final.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: center;
+   width: 10%;
+   text-align: center;
 }
 
 #media .mediaTags a {
+   font-size: 50%;
    text-decoration: none;
    transition: color 0.25s;
+   vertical-align: middle;
 }
 
 #media .mediaTags a:hover {
@@ -428,7 +434,7 @@ text-align: center;
 
 #admin .container {
    height: 300px;
-   background-color: rgb(68, 68, 90);
+   background-color: rgb(63, 63, 100);
 
    display: flex;
    flex-direction: row;
@@ -439,22 +445,27 @@ text-align: center;
 /* admin section > profile  */
 
 #admin .profile {
-   width: 12%;
+   clip-path: circle();
+   width: 10%;
+   margin-bottom: 8%;
 }
 
 #admin img {
    width: 100%;
+   vertical-align: middle;
 }
 
 /* admin section > paragraph */
 
 #admin .adminP {
-   width: 85%;
+   width: 81%;
+   margin-bottom: 4%;
 }
 
+/* 
 #admin .adminP h3 {
-   margin-bottom: 1%;
-}
+   margin-bottom: 2%;
+} */
 
 #admin .adminP h3>span {
    font-weight: normal;
