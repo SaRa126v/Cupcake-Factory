@@ -486,7 +486,7 @@ main .container{
     border-radius: 100%;
 }
 .box-latest-works>div:hover div:first-of-type{
-    background:linear-gradient(90deg, rgba(6, 146, 227, 0.546),  rgba(6, 146, 227, 0.546) 50%,rgba(74, 234, 221, 0.594) 100%) ;
+    background: linear-gradient(to right, rgba(0,188,212,.75) 0%,rgba(53,64,147,.75) 100%);
      opacity: 1;
      position: absolute;
     top: 0;
