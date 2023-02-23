@@ -217,7 +217,7 @@ li{
     top: 76.4%;
 
     animation-name: rocket;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-fill-mode: forwards;
 }
 
@@ -241,7 +241,7 @@ li{
     top: 5%;
 
     animation-name: Mountain;
-    animation-duration: 10s;
+    animation-duration: 15s;
     transition: all;
     animation-fill-mode: forwards;
 }
@@ -263,36 +263,49 @@ li{
 
 @keyframes years-ofaction {
     0%{
-        width: none;
+        width:0px;
     }
     100%{
-        width: 100%;
+        width: 400px;
         transform: translateX(-200px);
+        opacity: 1;
     }
 }
 
 /* svg-10years%ofaction */
 
 .svg-10years{
+    overflow: hidden;
     animation-name: years-ofaction;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
+
+    width: 400px;
+    height: 100px;
+
 }
 
 .svg-ofaction{
+    opacity: 0;
+    overflow: hidden;
     animation-name: years-ofaction;
     animation-fill-mode: forwards;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
 }
 
 /* animation>paragraph (header) */
 
 @keyframes paragraph {
     0%{
-        /* width: none; */
+        width: 0;
+    }
+    50%{
+        opacity: 1;
     }
     100%{
-        /* width: 100%; */
+        width: 320px;
+        opacity: 1;
         transform: translateX(-200px);
     }
 }
@@ -301,11 +314,29 @@ li{
     margin-top: 30px;
 }
 
-.div-p-header{
+.div-main-p-header>div:nth-of-type(1){
     animation-name: paragraph;
-    animation-duration:2s ;
+    animation-duration:1s ;
+    animation-delay: 1.2s;
     animation-fill-mode: forwards;
+    opacity: 0;
+    width: 320px;
 }
+.div-main-p-header>div:nth-of-type(2){
+    animation-name: paragraph;
+    animation-duration:1s ;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.div-main-p-header>div:nth-of-type(3){
+    animation-name: paragraph;
+    animation-duration:1s ;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;  
+    opacity: 0;
+}
+
 /* what-we-do start.................. */
 main .container{
     width: 1200px;
@@ -426,6 +457,7 @@ main .container{
     font-weight: bold;
     margin-left: 20px;
 }
+/* box start🎊🎉🎉✨✨🧨 */
 .box-latest-works{
     display: flex;
     flex-wrap: wrap;
@@ -512,6 +544,7 @@ width: 90%;
     left: 0;
     margin-left: 18px;
 }
+/* box end🎇🎆🎆🎈🎈🎈🎈🎈🎈 */
 /* input START................... */
 #latest-works .input-load-more{
     padding-top: 50px;
