@@ -627,13 +627,10 @@ margin: 0 auto;
     line-height: 29px;
 }
 /* sectin our pricess end🎇🎇🎇🎇🎇🎇🎇🎉 */
+
 .texts{
-    float: right;
-   margin:0% auto ;
-   margin-left: 350px;
-   justify-content: center;
-   flex-wrap:nowrap;
-   align-content: center;
+float: center;
+margin: 0% auto;
 }
 .texts p{
     margin-top: 50px;
@@ -668,9 +665,7 @@ margin: 0 auto;
     margin-top: -1200px;
 }
 
-.txt{
-    margin-bottom: 100px;
-}
+
 .texts button{
     background-color:#d698e9;
     padding:28px 65px 28px 65px ;
@@ -680,6 +675,7 @@ margin: 0 auto;
     color: #fff;
     font-weight: 700;
     border: none;
+    margin-top: 10px;
 }
 .texts button:hover{
     background-color: #B6C6C9;
@@ -694,11 +690,15 @@ margin: 0 auto;
 }
 .star{
     background-color: #b6c6c949;
+    border: 2px solid rgba(186, 217, 230, 0.767);
     margin-top: -400px;
     float: right;
-    margin-right:400px;
+    margin-left:400px;
     position: relative;
     padding: 55px 35px 20px 100px ;
+}
+.star img,h1{
+    position: relative;
 }
 .star h1{
     font-weight: 200;
@@ -727,8 +727,3 @@ margin: 0 auto;
  
 
 
-#why-us >div.texts> p>h1>a  {
-    margin-left:500px;
-    text-align: center;
-  
-}
