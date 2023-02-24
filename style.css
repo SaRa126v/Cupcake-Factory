@@ -628,8 +628,11 @@ margin: 0 auto;
 }
 /* sectin our pricess end🎇🎇🎇🎇🎇🎇🎇🎉 */
 .texts{
-    float: left;
-    margin-left:-110px;
+    float: right;
+   margin:0% auto ;
+   margin-left: 350px;
+   justify-content: center;
+   flex-wrap:nowrap;
 }
 .texts p{
     margin-top: 50px;
@@ -649,7 +652,7 @@ margin: 0 auto;
     margin-left: -330px;
     height: 629.5px;
     margin-top:-650px ;
-    height: 725px;   
+    height: 725%;   
 }
 #container{
     width: 1000px;
@@ -704,9 +707,11 @@ margin: 0 auto;
     text-align: center;
 }
 #why-us video{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    height: 20%;
-    width: 780px;
+   
+    background:linear-gradient(-60deg,#3e3b51,#aa0a826c,rgb(119, 18, 133),#aa0a82) ;
+    
+    width:100%;
+    height: 700px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
