@@ -370,3 +370,86 @@ width: 90%;
 }
 /* box end🎇🎆🎆🎈🎈🎈🎈🎈🎈 */
 /* section our works END.......................... */
+
+/* section get in touch start nemikham noooooooooo */
+#get-in-touch{
+    background-image: url(image/bg_contact.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+    height: 1800px;
+}
+#get-in-touch>.container{
+    width: 1200px;
+    min-width: 500px;
+    height: 1000px;
+    margin: 0 auto;
+}
+.title-get-in-touch {
+    color: #ffff;
+    width: 35%;
+    min-width: 200px;
+    text-align: center;
+    margin: auto;
+    padding-top: 140px;
+}
+.title-get-in-touch span{
+    font-size: 50px;
+    margin-right: 13px;
+}
+.title-get-in-touch span:nth-of-type(2){
+    font-weight: bold;
+}
+.paragraph-get-in-touch{
+    padding-top: 30px;
+    line-height: 37px;
+    margin-bottom: 100px;
+}
+.input-box{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 600px;
+}
+.top-input{
+    width: 25%;
+    padding: 13px 29px;
+    background-color:rgb(2,3,129);
+    color: #99a9b5;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border: none;
+    
+}
+.bottom-input{
+    width: 92.3%;
+    max-width: 1200px;
+    margin-right: 30px;
+   padding: 13px 10px 250px 23px;
+    color: #99a9b5;
+    background-color:rgb(2,3,129);
+    margin-bottom: 50px;
+    border: none;
+}
+.last-input{
+    padding: 15px 20px;
+    background-color: #ce93d8;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+}
+.title-svg{
+    font-size: 20px;
+    color: #ffff;
+    margin-bottom: 70px;
+}
+.svg-team svg{
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+}
+.svg-team svg:hover{
+    fill: #428bca;
+}
