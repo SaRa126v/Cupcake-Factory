@@ -37,7 +37,7 @@
     transform: rotateY('100%');
 }
 .box-our-works>div{
-    width: 400px;
+    width: 411.5px;
     height: 252px;
     position: relative;
 }
@@ -67,7 +67,7 @@
     transform: translate(0,0);
     /* bottom: 0;
     right: 0; */
-    width: 400px;
+    width: 411.5px;
     height: 250px;
     border-radius: 0;
 }
@@ -118,3 +118,4 @@ width: 90%;
     margin-left: 18px;
 }
 /* box end🎇🎆🎆🎈🎈🎈🎈🎈🎈 */
+/* section our works END.......................... */
