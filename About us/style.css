@@ -201,7 +201,7 @@ header {
 }
 
 
-/* section THEGEM */
+/* section THEGEM ............................................*/
 
 #THEGEM {
     background: url(images/1-1\ \(1\).jpg);
@@ -252,7 +252,7 @@ header {
     top: 0;
 }
 
-/* section creative */
+/* section creative ........................................*/
 
 #creative {
     background: url(images/2-1\ \(1\).jpg);
@@ -362,4 +362,31 @@ header {
     top: 250px;
     left: -60px;
     width: 400px;
+}
+
+/* section EXPERTISE ...................... */
+
+#EXPERTISE video{
+    width: 100%;
+    height: auto;
+}
+
+/* div-main-paragraph-cection-expertise */
+
+.div-main-paragraph-section-expertise{
+    position: absolute;
+    bottom: 500px;
+    left: 34%;
+}
+
+.div-main-paragraph-section-expertise>svg:nth-of-type(2){
+    position: absolute;
+    left: -180px;
+    top: 70px;
+}
+
+/* div-model-section-expertise */
+
+.div-model-section-expertise{
+    
 }
