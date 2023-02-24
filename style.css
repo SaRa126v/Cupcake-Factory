@@ -700,6 +700,9 @@ margin: 0% auto;
 .star img,h1{
     position: relative;
 }
+.star img{
+    margin-left: -8px;
+}
 .star h1{
     font-weight: 200;
     font-size: 25px;
@@ -722,6 +725,7 @@ margin: 0% auto;
   min-height:100px;
 
 }
+
     
     
  
