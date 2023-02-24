@@ -29,6 +29,10 @@ h3 {
    font-family: 'Montserrat';
 }
 
+h2 {
+   font-size: 100%;
+}
+
 p,
 a,
 span,
@@ -37,7 +41,8 @@ li {
 }
 
 p {
-   line-height: 200%
+   line-height: 200%;
+   margin: 0%;
 }
 
 /* Landing Section ...............................................*/
@@ -169,16 +174,12 @@ p {
    width: 100%;
 }
 
-h2 {
-   font-size: 100%;
-}
-
 /* Fall Animation */
 
 .imgBehind {
    position: relative;
    animation: up 2s forwards;
-   visibility: hidden;
+   opacity: 1 ;
 }
 
 .imgFront {
@@ -219,12 +220,12 @@ h2 {
 @keyframes up {
 
    from {
-      visibility: hidden;
+      opacity: 0 ;
       transform: translateY(10%);
    }
 
    to {
-      visibility: visible;
+      opacity: 1 ;
       transform: translateY(0%);
    }
 }
@@ -243,10 +244,6 @@ h2 {
    padding: 0%;
 }
 
-p {
-   margin: 0%;
-}
-
 /* Pen Section .................................................*/
 
 #pen .paragraphs {
@@ -254,21 +251,23 @@ p {
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+
+   margin-bottom: 4%;
 }
 
 #pen .paragraphs > div {
-   width: 49%;
-   
-   line-height: 0%;
+   width: 48%;
 }
-
-#pen .letter > div {
-   display: inline-block;
+#pen .flexible {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
 }
 
 #pen .hexagon {
-   width: 90px;
-   height: 70px;
+   width: 80%;
+   height: 72px;
    background-position: center;
    background-repeat: no-repeat;
    background-size: 80%;
@@ -329,28 +328,28 @@ p {
 
 #keyboard ul>li:nth-of-type(1) {
    animation: appearing 2s forwards;
-   visibility: hidden;
+   opacity: 0 ;
 }
 
 #keyboard ul>li:nth-of-type(2) {
    animation: appearing 2s 0.5s forwards;
-   visibility: hidden;
+   opacity: 0 ;
 }
 
 #keyboard ul>li:nth-of-type(3) {
    animation: appearing 2s 1s forwards;
-   visibility: hidden;
+   opacity: 0 ;
 }
 
 
 @keyframes appearing {
    from {
-      visibility: hidden;
+      opacity: 0 ;
       transform: translateY(60%);
    }
 
    to {
-      visibility: visible;
+      opacity: 1 ;
       transform: translateY(0%);
    }
 }
