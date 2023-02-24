@@ -708,15 +708,18 @@ margin: 0 auto;
     text-align: center;
 }
 #why-us video{
-  position: relative;
-  width: 2920px;
-  height: auto;
+    background-size: cover;
+  position: fixed;
+  width:49 20px ;
+  height:123px auto;
    left: 0%;
    top: 0%;
    right: 0%;
    overflow: hidden;
   z-index: -2;
-  padding-bottom: 156.25%;
+  padding-bottom: 756.25%;
+  min-width:1000px;
+  min-height:100px;
 
 }
     
