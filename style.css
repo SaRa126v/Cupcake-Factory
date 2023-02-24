@@ -633,6 +633,7 @@ margin: 0 auto;
    margin-left: 350px;
    justify-content: center;
    flex-wrap:nowrap;
+   align-content: center;
 }
 .texts p{
     margin-top: 50px;
@@ -708,10 +709,15 @@ margin: 0 auto;
 }
 #why-us video{
    
-    background:linear-gradient(-60deg,#3e3b51,#aa0a826c,rgb(119, 18, 133),#aa0a82) ;
+    background:linear-gradient(-60deg,#3e3b51,#4c004e,rgb(119, 18, 133),#720657) ;
     
     width:100%;
     height: 700px;
     flex-wrap: wrap;
     justify-content: center;
+}
+#why-us >div.texts> p>h1>a  {
+    margin-left:500px;
+    text-align: center;
+  
 }
