@@ -719,7 +719,9 @@ animation: transform-img .8s  backwards;
     line-height: 29px;
 }
 /* sectin our pricess end🎇🎇🎇🎇🎇🎇🎇🎉 */
-
+.container{
+    
+}
  .texts{
 float: center;
 margin: 0% auto;
@@ -823,7 +825,7 @@ margin: 0% auto;
  background-size: cover;
   position: fixed;
   width:5690px ;
-  height:124px auto;
+  height:123px auto;
    left: 0%;
    top: 0%;
    right: 0%;
@@ -832,7 +834,8 @@ margin: 0% auto;
   padding-bottom: 756.25%;
   min-width:1000px;
   min-height:100px;
-
+  box-sizing: content-box;
+  display: block;
 }
 .flg{
     display: grid;
@@ -916,7 +919,18 @@ margin: 0% auto;
 .textbox{
     margin-left: 50px;
 }
-
+.contain
+#meet-our-team img{
+    background-image: url(images/rocket_bg.webp);
+    position:relative;
+    display: block;
+    left: 0%;
+    right: 0%;
+}
+#why-us{
+    display: block;
+    
+}
     
     
  
