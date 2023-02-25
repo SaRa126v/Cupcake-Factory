@@ -1,0 +1,9 @@
+@media  (min-width: 768px) {
+    #our-blogs{
+        width: 100%;
+    }
+}
+
+
+
+repeat(auto-fill, minmax(180px, 1fr, ))
