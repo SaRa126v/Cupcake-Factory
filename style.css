@@ -720,7 +720,7 @@ animation: transform-img .8s  backwards;
 }
 /* sectin our pricess end🎇🎇🎇🎇🎇🎇🎇🎉 */
 
-/* .texts{
+ .texts{
 float: center;
 margin: 0% auto;
 }
@@ -744,17 +744,12 @@ margin: 0% auto;
     margin-top:-650px ;
     height: 725%;   
 }
-#container{
-    width: 1000px;
-    margin: 0 auto;
-  align-items: center;  
-  position: absolute;
- 
-}
+
+
 .texts button,h1,p,img{
     position: relative;
     z-index: 3;
-    margin-top: -1200px;
+    
 }
 
 
@@ -769,6 +764,7 @@ margin: 0% auto;
     border: none;
     margin-top: 10px;
 }
+
 .texts button:hover{
     background-color: #B6C6C9;
     cursor: pointer;
@@ -776,7 +772,7 @@ margin: 0% auto;
 }
 .name-of-section h1{
     font-weight: 100;
-    margin-left: 500px;
+    margin-left: 700px;
     margin-top: 12px;
     margin-bottom: 100px;
 }
@@ -785,9 +781,10 @@ margin: 0% auto;
     border: 2px solid rgba(186, 217, 230, 0.767);
     margin-top: -400px;
     float: right;
-    margin-left:400px;
+    margin-left:500px;
     position: relative;
     padding: 55px 35px 20px 100px ;
+    
 }
 .star img,h1{
     position: relative;
@@ -804,10 +801,10 @@ margin: 0% auto;
 }
 
 #why-us video{
-    background-size: cover;
+ background-size: cover;
   position: fixed;
   width:5690px ;
-  height:125px auto;
+  height:124px auto;
    left: 0%;
    top: 0%;
    right: 0%;
@@ -817,7 +814,7 @@ margin: 0% auto;
   min-width:1000px;
   min-height:100px;
 
-}*/
+}
 
     
     
