@@ -27,6 +27,7 @@ h2,
 h3 {
    color: var(--white);
    font-family: 'Montserrat';
+   text-decoration: none;
 }
 
 h2 {
@@ -547,7 +548,7 @@ p {
 #info {
    background-image: radial-gradient(circle, rgba(101, 52, 146, 0.911),
     hsl(240, 35%, 22%), rgba(101, 52, 146, 0.911));
-   height: 800px;
+   height: 750px;
 }
 
 #info .container {
@@ -558,14 +559,22 @@ p {
 }
 
 #info .container > div {
-   width: 25%;
+   width: 31%;
    margin-top: 10%;
 }
 
+/* Logo */
+
 #info img {
-  width: 50%;
+  width: 42%;
   margin-bottom: 10%;
 }
+
+/* Email Us + News Letter > Input */
+
+#info input:focus {
+   color: var(--white);
+   }
 
 #info input {
    background-color: rgb(102, 83, 135);
@@ -574,23 +583,114 @@ p {
    padding: 4%;
    border-radius:5px;
    font-family: 'Montserrat';
-   
-}
-#info input:focus {
-color: var(--white);
+   width: 100%;
+   font-size: 60%;
+   margin-bottom: 8%;
 }
 
+/* Email Us */
 
+#info .emailUs input:last-of-type {
+padding-bottom: 20%;
+}
+
+#info .emailUs button {
+   width: 100%;
+   outline: none;
+   padding: 4%;
+   border-radius:5px;
+   border: none;
+   background-color: #ce93d8;
+   color: var(--white);
+   transition: background-color 0.25s , color 0.25s ;
+}
+
+#info .emailUs button:hover {
+   background-color: rgb(169,184,195) ;
+   color:  hsl(240, 35%, 22%);
+}
+
+/* News Letter */
+
+#info .newsletter p {
+margin-bottom: 6%;
+}
+
+#info .stick {
+   position: relative;
+}
+
+#info .newsletter button {
+   background-image: url(img/forward-svgrepo-com.svg);
+   background-color: #ce93d8;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 60%;
+   border-radius:0px 5px 5px 0px;
+   border: none;
+   padding: 6.5%;
+   transition: background-color 0.25s;
+   position: absolute;
+   top: -78.5px;
+   right: 0px;
+}
+
+#info .newsletter button:hover {
+   background-color: #350058;
+}
+
+#info .newsletter span {
+   opacity: 0.5;
+}
 
 /* Copy Right Section............................................... */
 
 #cRight {
-   background-color: rgb(39, 39, 39);
+   background-color: rgb(14, 11, 44);
    height: 100px;
 }
 
+#cRight .container {
+
+   display: flex;
+   flex-direction: row;
+   justify-content:space-between;
+   align-items: center;
+}
+
+/* Codex */
+
+#cRight .codex span > a {
+   color: #ce93d8;
+   font-size: 100%;
+} 
 
 
+#cRight .codex > span {
+   color:  #428bca;
+   }
+#cRight .codex span > a:hover {
+   text-decoration: underline;
+}
+
+/* Links */
+
+#cRight .links a {
+color:  #428bca;
+transition: color 0.25s;
+} 
+
+#cRight .links a:hover {
+   color: #ce93d8;
+   
+}
+
+#cRight .links a:not(:last-of-type) {
+   border-right: 1px solid  #428bca;
+   padding: 0% 5% 0% 5%;
+   }
+
+/* Icons */
 
 
 
