@@ -13,7 +13,7 @@ body {
    box-sizing: border-box;
 }
 
-main .container {
+ .container {
    width: 1200px;
    margin: 0 auto;
 }
@@ -31,6 +31,10 @@ h3 {
 
 h2 {
    font-size: 100%;
+}
+
+h4 {
+   font-family: 'Montserrat';
 }
 
 p,
@@ -439,6 +443,8 @@ p {
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
+
+   margin-bottom: 7%;
 }
 
 /* admin section > profile  */
@@ -484,4 +490,51 @@ p {
 #admin .adminP a:hover svg {
    fill: rgb(104, 104, 104);
    color: rgb(104, 104, 104);
+}
+
+/* Footer Start...................................................... */
+/* Map Section............................................... */
+
+#map {
+   position: relative;
+   height: 800px;
+}
+
+#map iframe {
+   width: 100%;
+   height: 100%;
+}
+
+#map .whiteBackground {
+   background-color: var(--white);
+   opacity: 0.95 ;
+   width: 100%;
+   height: 30%;
+   position: absolute;
+}
+
+#map .container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#map span {
+   color: rgb(165, 165, 165);
+}
+
+#map img {
+   width:  60% ;
+}
+
+#map .hoursHere {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+#map .hoursHere > div:first-of-type {
+   width: 20%;
 }
