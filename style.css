@@ -720,7 +720,7 @@ animation: transform-img .8s  backwards;
 }
 /* sectin our pricess end🎇🎇🎇🎇🎇🎇🎇🎉 */
 
-/* .texts{
+ .texts{
 float: center;
 margin: 0% auto;
 }
@@ -744,17 +744,12 @@ margin: 0% auto;
     margin-top:-650px ;
     height: 725%;   
 }
-#container{
-    width: 1000px;
-    margin: 0 auto;
-  align-items: center;  
-  position: absolute;
- 
-}
+
+
 .texts button,h1,p,img{
     position: relative;
     z-index: 3;
-    margin-top: -1200px;
+    
 }
 
 
@@ -769,6 +764,7 @@ margin: 0% auto;
     border: none;
     margin-top: 10px;
 }
+
 .texts button:hover{
     background-color: #B6C6C9;
     cursor: pointer;
@@ -781,13 +777,15 @@ margin: 0% auto;
     margin-bottom: 100px;
 }
 .star{
-    background-color: #b6c6c949;
-    border: 2px solid rgba(186, 217, 230, 0.767);
-    margin-top: -400px;
+    background-color: #b6c6c921;
+    border: 2px solid rgba(186, 217, 230, 0.425);
+    margin-top: -450px;
     float: right;
-    margin-left:400px;
+    margin-left:500px;
     position: relative;
-    padding: 55px 35px 20px 100px ;
+    padding: 25px 35px 5px 100px ;
+     margin-right:400px;
+    
 }
 .star img,h1{
     position: relative;
@@ -802,11 +800,12 @@ margin: 0% auto;
     margin-left: -60px;
     text-align: center;
 }
+
 #why-us video{
-    background-size: cover;
+ background-size: cover;
   position: fixed;
   width:5690px ;
-  height:123px auto;
+  height:124px auto;
    left: 0%;
    top: 0%;
    right: 0%;
@@ -816,7 +815,83 @@ margin: 0% auto;
   min-width:1000px;
   min-height:100px;
 
-} */
+}
+.flg{
+    display: grid;
+    float: left;
+    margin-top: -450px;
+   
+    font-size: 28px;
+    padding: 15px 25px 3px 10px ;
+    float: right;
+     margin-right:100px;
+
+     margin-left:400px;
+     background-color: #b6c6c91a;
+     border: 2px solid rgba(186, 217, 230, 0.425);
+}
+.flg h1{
+    text-align: center;
+    font-size: 26px;
+    margin-left: 20px;
+    font-weight: 300;
+}
+.flg img{
+    float: left;
+    margin-left: 80px;
+}
+#why-us{
+    align-content: center;
+    
+}
+.hrt{
+    display: grid;
+    float: left;
+    margin-top: -200px;
+   
+    font-size: 28px;
+    padding: 15px 30px 3px 15px ;
+    float: right;
+     margin-right:415px;
+
+     margin-left:400px;
+     background-color: #b6c6c91a;
+     border: 2px solid rgba(186, 217, 230, 0.425);
+}
+.hrt h1{
+    text-align: center;
+    font-size: 26px;
+    margin-left: 20px;
+    font-weight: 300;
+}
+.hrt img{
+    margin-left: 80px;
+}
+.magic-wand{
+    display: grid;
+    float: left;
+    margin-top: -205px;
+   
+    font-size: 28px;
+    padding: 5px 50px 4px 50px ;
+    float: right;
+     margin-right:100px;
+
+     margin-left:400px;
+     background-color: #b6c6c91a;
+     border: 2px solid rgba(186, 217, 230, 0.425);  
+}
+.magic-wand h1{
+    text-align: center;
+    font-size: 26px;
+    margin-left: 10px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+.magic-wand img{
+    margin-left: 60px;
+    margin-top: 20px;
+}
 
     
     
