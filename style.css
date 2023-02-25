@@ -778,12 +778,13 @@ margin: 0% auto;
 }
 .star{
     background-color: #b6c6c949;
-    border: 2px solid rgba(186, 217, 230, 0.767);
-    margin-top: -400px;
+    border: 2px solid rgba(186, 217, 230, 0.425);
+    margin-top: -450px;
     float: right;
     margin-left:500px;
     position: relative;
-    padding: 55px 35px 20px 100px ;
+    padding: 25px 35px 5px 100px ;
+     margin-right:500px;
     
 }
 .star img,h1{
@@ -814,6 +815,20 @@ margin: 0% auto;
   min-width:1000px;
   min-height:100px;
 
+}
+.flg{
+    display: grid;
+    float: left;
+    margin-top: -450px;
+   
+    font-size: 28px;
+    padding: 15px 25px 3px 100px ;
+    float: right;
+     margin-right:200px;
+
+     margin-left:400px;
+     background-color: #b6c6c949;
+     border: 2px solid rgba(186, 217, 230, 0.425);
 }
 
     
