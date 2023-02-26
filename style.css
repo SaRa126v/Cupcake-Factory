@@ -924,8 +924,8 @@ margin: 0% auto;
     background-image: url(images/rocket_bg.webp);
     position:relative;
     display: block;
-    left: 0%;
-    right: 0%;
+    width: 3567px;
+    height: 124px auto;
 }
 #why-us{
     display: block;
