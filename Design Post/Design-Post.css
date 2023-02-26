@@ -647,7 +647,7 @@ margin-bottom: 6%;
 
 #cRight {
    background-color: rgb(14, 11, 44);
-   height: 100px;
+   /* height: 100px; */
 }
 
 #cRight .container {
@@ -659,6 +659,12 @@ margin-bottom: 6%;
 }
 
 /* Codex */
+#cRight .codex,.links,.icons{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   vertical-align: middle;
+   color: #99a9b5;;
+}
 
 #cRight .codex span > a {
    color: #ce93d8;
@@ -667,16 +673,21 @@ margin-bottom: 6%;
 
 
 #cRight .codex > span {
-   color:  #428bca;
+   /* color:  #428bca; */
    }
 #cRight .codex span > a:hover {
    text-decoration: underline;
 }
 
 /* Links */
+#cRight .links{
+   width: 310px;
+}
+
+
 
 #cRight .links a {
-color:  #428bca;
+/* color:  #428bca; */
 transition: color 0.25s;
 } 
 
@@ -689,6 +700,27 @@ transition: color 0.25s;
    border-right: 1px solid  #428bca;
    padding: 0% 5% 0% 5%;
    }
+
+   #cRight .links a:last-of-type{
+      padding: 0% 5% 0% 5%;
+   }
+
+#cRight .icons a:nth-of-type(1) svg:hover{
+   fill: #ffff;
+   transition-duration: .5s;
+}
+#cRight .icons a:nth-of-type(2) svg:hover{
+   fill: #ffff;
+   transition-duration: .5s;
+}
+#cRight .icons a:nth-of-type(3) svg:hover{
+   fill: #ffff;
+   transition-duration: .5s;
+}
+#cRight .icons a:nth-of-type(4) svg>path:hover{
+   fill: #ffff;
+   transition-duration: .5s;
+}
 
 /* Icons */
 
