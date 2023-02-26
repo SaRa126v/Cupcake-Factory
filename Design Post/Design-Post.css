@@ -13,7 +13,7 @@ body {
    box-sizing: border-box;
 }
 
- .container {
+.container {
    width: 1200px;
    margin: 0 auto;
 }
@@ -54,8 +54,8 @@ p {
 
 #landing {
    background-image: url(img/landing\ background.jpg);
-   width: 2500px;
-   margin: 0 auto;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
 #landing .container {
@@ -184,16 +184,16 @@ p {
 .imgBehind {
    position: relative;
    animation: up 2s forwards;
-   opacity: 1 ;
+   opacity: 1;
 }
 
 .imgFront {
-   width: 100.5%;
-   height: 98.5%;
+   width: 100%;
+   height: 100%;
    background-color: rgba(65, 27, 100, 0.603);
    position: absolute;
-   top: -0.01%;
-   left: -0.01%;
+   top: 0;
+   left: 0;
    visibility: hidden;
 }
 
@@ -225,12 +225,12 @@ p {
 @keyframes up {
 
    from {
-      opacity: 0 ;
+      opacity: 0;
       transform: translateY(15%);
    }
 
    to {
-      opacity: 1 ;
+      opacity: 1;
       transform: translateY(0%);
    }
 }
@@ -260,9 +260,10 @@ p {
    margin-bottom: 4%;
 }
 
-#pen .paragraphs > div {
+#pen .paragraphs>div {
    width: 48%;
 }
+
 #pen .flexible {
    display: flex;
    flex-direction: row;
@@ -333,28 +334,28 @@ p {
 
 #keyboard ul>li:nth-of-type(1) {
    animation: appearing 2s forwards;
-   opacity: 0 ;
+   opacity: 0;
 }
 
 #keyboard ul>li:nth-of-type(2) {
    animation: appearing 2s 0.5s forwards;
-   opacity: 0 ;
+   opacity: 0;
 }
 
 #keyboard ul>li:nth-of-type(3) {
    animation: appearing 2s 1s forwards;
-   opacity: 0 ;
+   opacity: 0;
 }
 
 
 @keyframes appearing {
    from {
-      opacity: 0 ;
+      opacity: 0;
       transform: translateY(60%);
    }
 
    to {
-      opacity: 1 ;
+      opacity: 1;
       transform: translateY(0%);
    }
 }
@@ -508,7 +509,7 @@ p {
 
 #map .whiteBackground {
    background-color: var(--white);
-   opacity: 0.95 ;
+   opacity: 0.95;
    width: 100%;
    height: 30%;
    position: absolute;
@@ -526,7 +527,7 @@ p {
 }
 
 #map img {
-   width:  70% ;
+   width: 70%;
 }
 
 #map .hoursHere {
@@ -536,7 +537,7 @@ p {
    align-items: center;
 }
 
-#map .hoursHere > div:first-of-type {
+#map .hoursHere>div:first-of-type {
    width: 20%;
    margin-bottom: 7%;
 }
@@ -547,41 +548,52 @@ p {
 
 #info {
    background-image: radial-gradient(circle, rgba(101, 52, 146, 0.911),
-    hsl(240, 35%, 22%), rgba(101, 52, 146, 0.911));
+         hsl(240, 35%, 22%), rgba(101, 52, 146, 0.911));
    height: 750px;
 }
 
 #info .container {
+   height: 750px;
+
    display: flex;
    flex-direction: row;
-   justify-content:space-between;
+   justify-content: space-between;
    align-items: center;
 }
 
-#info .container > div {
-   width: 31%;
-   margin-top: 10%;
+#info .container>div {
+   width: 30%;
+   height: 100%;
+   margin-top: 25%;
 }
 
-/* Logo */
+/* Gem Logo */
 
 #info img {
-  width: 42%;
-  margin-bottom: 10%;
+   width: 42%;
+   margin-top: 10% ;
+}
+
+#info .gemLogo p {
+   width: 100%;
+   margin-top: 15%;
 }
 
 /* Email Us + News Letter > Input */
 
-#info input:focus {
+#info input:focus,
+#info textarea:focus {
    color: var(--white);
-   }
+}
 
-#info input {
+#info form > input,
+#info textarea,
+#info .newsletter > input {
    background-color: rgb(102, 83, 135);
    border: 1px solid rgb(162, 156, 183);
    outline: none;
    padding: 4%;
-   border-radius:5px;
+   border-radius: 5px;
    font-family: 'Montserrat';
    width: 100%;
    font-size: 60%;
@@ -590,30 +602,32 @@ p {
 
 /* Email Us */
 
-#info .emailUs input:last-of-type {
-padding-bottom: 20%;
+#info textarea {
+   resize: both;
+   overflow: hidden;
+   max-width: 100%;
 }
 
 #info .emailUs button {
    width: 100%;
    outline: none;
    padding: 4%;
-   border-radius:5px;
+   border-radius: 5px;
    border: none;
    background-color: #ce93d8;
    color: var(--white);
-   transition: background-color 0.25s , color 0.25s ;
+   transition: background-color 0.25s, color 0.25s;
 }
 
 #info .emailUs button:hover {
-   background-color: rgb(169,184,195) ;
-   color:  hsl(240, 35%, 22%);
+   background-color: rgb(169, 184, 195);
+   color: hsl(240, 35%, 22%);
 }
 
 /* News Letter */
 
 #info .newsletter p {
-margin-bottom: 6%;
+   margin-bottom: 6%;
 }
 
 #info .stick {
@@ -626,12 +640,12 @@ margin-bottom: 6%;
    background-repeat: no-repeat;
    background-position: center;
    background-size: 60%;
-   border-radius:0px 5px 5px 0px;
+   border-radius: 0px 5px 5px 0px;
    border: none;
-   padding: 6.5%;
+   padding: 7%;
    transition: background-color 0.25s;
    position: absolute;
-   top: -78.5px;
+   top: -78px;
    right: 0px;
 }
 
@@ -647,82 +661,78 @@ margin-bottom: 6%;
 
 #cRight {
    background-color: rgb(14, 11, 44);
-   /* height: 100px; */
 }
 
 #cRight .container {
-
    display: flex;
    flex-direction: row;
-   justify-content:space-between;
+   justify-content: space-between;
    align-items: center;
+
+   height: 150px;
 }
 
 /* Codex */
-#cRight .codex,.links,.icons{
+#cRight .codex,
+.links,
+.icons {
    margin-top: 20px;
    margin-bottom: 20px;
    vertical-align: middle;
-   color: #99a9b5;;
+   color: #99a9b5;
+   ;
 }
 
-#cRight .codex span > a {
+#cRight .codex span>a {
    color: #ce93d8;
    font-size: 100%;
-} 
+}
 
 
-#cRight .codex > span {
+#cRight .codex>span {
    /* color:  #428bca; */
-   }
-#cRight .codex span > a:hover {
+}
+
+#cRight .codex span>a:hover {
    text-decoration: underline;
 }
 
 /* Links */
-#cRight .links{
-   width: 310px;
+#cRight .links {
+   width: 45%;
 }
 
 
 
 #cRight .links a {
-/* color:  #428bca; */
-transition: color 0.25s;
-} 
+   /* color:  #428bca; */
+   transition: color 0.25s;
+}
 
 #cRight .links a:hover {
    color: #ce93d8;
-   
+
 }
 
-#cRight .links a:not(:last-of-type) {
-   border-right: 1px solid  #428bca;
+#cRight .links a {
+   border-right: 1px solid #428bca;
    padding: 0% 5% 0% 5%;
-   }
+}
 
-   #cRight .links a:last-of-type{
-      padding: 0% 5% 0% 5%;
-   }
-
-#cRight .icons a:nth-of-type(1) svg:hover{
-   fill: #ffff;
-   transition-duration: .5s;
-}
-#cRight .icons a:nth-of-type(2) svg:hover{
-   fill: #ffff;
-   transition-duration: .5s;
-}
-#cRight .icons a:nth-of-type(3) svg:hover{
-   fill: #ffff;
-   transition-duration: .5s;
-}
-#cRight .icons a:nth-of-type(4) svg>path:hover{
-   fill: #ffff;
-   transition-duration: .5s;
+#cRight .links a:last-of-type {
+   border: none;
 }
 
 /* Icons */
 
+#cRight .icons a svg {
+   transition: fill .5s;
+}
 
+#cRight .icons a svg:hover {
+   fill: #ffff;
+}
 
+#cRight .icons a:nth-of-type(4) svg>path:hover {
+   fill: #ffff;
+}
