@@ -919,13 +919,22 @@ margin: 0% auto;
 .textbox{
     margin-left: 50px;
 }
-.contain
-#meet-our-team img{
-    background-image: url(images/rocket_bg.webp);
-    position:relative;
-    display: block;
-    width: 3567px;
-    height: 124px auto;
+
+ #meet-over-team>.container img{
+     margin-top: 100px; 
+     background-size: cover; 
+     background-image: url(images/rocket_bg.webp); 
+       background-position: center; 
+    
+     z-index: 1; 
+    
+     width: 1460.56px; 
+     height: 5692px auto; 
+     align-content: center; 
+     align-items: center; 
+     left: 0%; 
+     right: 0%; 
+   
 }
 #why-us{
     display: block;
