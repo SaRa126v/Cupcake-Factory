@@ -49,7 +49,7 @@ li{
 /* cantainer-header */
 
 .cantainer {
-    width: 75%;
+    width: 1200px;
     height: 100%;
     margin: auto;
     position: relative;
@@ -237,9 +237,9 @@ li{
     width: 450px;
 
     position: absolute;
-    right: 10%;
     top: 5%;
-
+    left: 55%;
+    
     animation-name: Mountain;
     animation-duration: 15s;
     transition: all;
