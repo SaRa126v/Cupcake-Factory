@@ -921,7 +921,7 @@ margin: 0% auto;
 }
 
  .rocket img{
-     margin-top: 100px; 
+     /* margin-top: 100px; 
      background-size: cover; 
      background-image: url(images/rocket_bg.webp); 
        background-position: center; 
@@ -935,10 +935,17 @@ margin: 0% auto;
      left: 0%; 
      right: 0%; 
    background-color: #000000;
-}
+ */
+ }
 #why-us{
     display: block;
     
+}
+#meet-our-team>.container{
+    background-image: url(images/rocket_bg.webp); 
+    background-size: cover; 
+    background-position: center;background-repeat: repeat-x;
+    margin-block-end: 12px;
 }
     
     
