@@ -96,7 +96,6 @@ header {
     margin-top: 5px;
 }
 
-
 /* ul-flag-icon-header */
 
 .ul-flag-icon-header {
@@ -112,7 +111,6 @@ header {
 /* li-flag-icon-header */
 
 .li-flag-icon-header {
-
     padding: 5px;
     margin-left: 9px;
     display: inline-block;
@@ -198,6 +196,10 @@ header {
 .div-felsh-header {
     text-align: center;
     margin-top: 150px;
+}
+
+.div-felsh-header:link{
+    transition-delay: 2s;
 }
 
 
@@ -499,6 +501,35 @@ header {
 
 .div-footer-section-awards>div>svg:nth-of-type(1) {
     position: absolute;
-    bottom: 15%;
-    left: 42%;
+    bottom: 11%;
+    left: 37.8%;
+}
+
+.div-footer-section-awards>div>svg:nth-of-type(2){
+    position: absolute;
+    bottom: 8.5%;
+    left: 27%;
+}
+
+.div-footer-section-awards>div>svg:nth-of-type(3){
+    position: absolute;
+    bottom: 4.5%;
+    left: 25%;
+}
+
+.div-footer-section-awards>div>a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    position: absolute;
+    bottom: 1%;
+    left: 40%;
+    background-color: #ce93d8;
+    font-size: 20px;
+}
+
+.div-footer-section-awards>div>a:hover{
+    background-color: white;
+    color: #ce93d8;
+    transition-duration: 0.5s;
 }
