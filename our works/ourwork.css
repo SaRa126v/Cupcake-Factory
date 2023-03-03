@@ -560,7 +560,7 @@ width: 90%;
     outline: none;
     padding: 4%;
     border-radius: 5px;
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     width: 100%;
     font-size: 60%;
     margin-bottom: 8%;
@@ -717,7 +717,6 @@ footer h1,
 footer h2,
 footer h3 {
     color: var(--white);
-    font-family: 'Montserrat';
     text-decoration: none;
 }
 
@@ -725,9 +724,7 @@ footer h2 {
     font-size: 100%;
 }
 
-footer h4 {
-    font-family: 'Montserrat';
-}
+
 
 footer p,
 footer a,
