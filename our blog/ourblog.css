@@ -25,86 +25,6 @@ a {
   color: white;
 }
 /* section-header */
-header {
-  background-color: rgb(125, 20, 146);
-}
-
-header.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-}
-
-nav {
-  display: inline-block;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  padding: 10px;
-  position: relative;
-  width: max-content;
-}
-
-header nav > ul > li {
-  color: blueviolet;
-}
-/* Menu Level 2 */
-header nav > ul > li > ul {
-  display: block;
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  top: 100%;
-  right: 0;
-
-  opacity: 0;
-  visibility: hidden;
-
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-delay: 0.5s;
-}
-
-nav li:hover > a {
-  color: blueviolet;
-}
-
-header nav > ul > li > ul > li > a {
-  padding-right: 50px;
-}
-
-header nav > ul > li:hover > ul {
-  opacity: 1;
-  visibility: visible;
-}
-
-header nav > ul > li > ul > li > ul {
-  display: none;
-  background-color: rgb(255, 253, 253);
-  position: absolute;
-  top: 0%;
-  right: 100%;
-}
-
-header nav > ul > li > ul > li:hover > ul {
-  display: block;
-}
-
-header nav > ul > li > ul > li > ul > li > a {
-  padding-right: 30px;
-}
-
-header nav > ul > li {
-  color: rgb(147, 76, 213);
-}
-
 
 /* section-1 */
 #our-blogs {
@@ -123,6 +43,7 @@ header nav > ul > li {
   padding: 20% 0;
   font-family: myFirstFont;
 }
+
 .our-blog span {
   display: flex;
   justify-content: center;
@@ -130,10 +51,12 @@ header nav > ul > li {
   font-weight: 200;
   margin-bottom: 20px;
 }
+
 .our-blog span > span {
   font-weight: 700;
   text-indent: 50px;
 }
+
 .our-blog p {
   font-weight: 200;
   width: 1000px;
@@ -141,7 +64,6 @@ header nav > ul > li {
   line-height: 30px;
   text-align: center;
 }
-
 
 /* section-gridbox */
 #gridbox {
@@ -337,10 +259,11 @@ header nav > ul > li {
   text-align: center;
   position: relative;
 }
- .text-position span, h1{
+.text-position span,
+h1 {
   position: absolute;
   bottom: 10%;
- }
+}
 
 /* overlay animation */
 
@@ -362,17 +285,16 @@ header nav > ul > li {
   transition-timing-function: ease-in-out;
 }
 
-.overlay{
+.overlay {
   transition-duration: 5s;
   transition-timing-function: ease-in-out;
 }
 
 .overlay:hover {
-  animation:zoomInOut 2s ;
+  animation: zoomInOut 2s;
   /* background-size: 150%; */
   /* transform: scale(1.1); */
 }
-
 
 .text-overlay {
   transform: translateY(-100%);
@@ -384,64 +306,92 @@ header nav > ul > li {
   text-align: center;
 }
 
-
-.text-overlay p{
+.text-overlay p {
   width: 90%;
 }
-.img{
+.img {
   overflow: hidden;
 }
 
-.img:hover .text-overlay{
-  transform: translateY(150%) ;
-  transition: .7s;
+.img:hover .text-overlay {
+  transform: translateY(150%);
+  transition: 0.7s;
 }
 
+/* footer   */
 
-/* WORKING */
-
-#working {
-  background: url(photos/map.png);
-  width: 100%;
-  height: 690px;
+#map {
   position: relative;
-  top: 1150px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  height: 800px;
 }
 
-.we-here {
-  background-color: aliceblue;
-  opacity: .6; 
-
+#map iframe {
+  width: 100%;
+  height: 100%;
 }
 
-#working > div{
+#map .whiteBackground {
+  background-color: var(--white);
+  opacity: 0.95;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+}
+
+#map .container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
-#working div div{
+#map span {
+  color: rgb(165, 165, 165);
+}
+
+#map img {
+  width: 70%;
+}
+
+#map .hoursHere {
   display: flex;
-  flex-direction: column;
-
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.fa-clock {
-  font-size: 70px;
-  margin-right: 10px ;
+#map .hoursHere > div:first-of-type {
+  width: 20%;
+  margin-bottom: 7%;
 }
 
-.fa-building {
-  font-size: 70px;
-  margin-right: 10px ;
+/* Info Section............................................... */
+
+#info {
+  background-image: radial-gradient(
+    circle,
+    rgba(101, 52, 146, 0.911),
+    hsl(240, 35%, 22%),
+    rgba(101, 52, 146, 0.911)
+  );
+  height: 750px;
 }
 
+#info .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-/* footer */
+#info .container > div {
+  width: 31%;
+  margin-top: 10%;
+}
 
+/* Logo */
 
+<<<<<<< Updated upstream
 /* Footer Start...................................................... */
 /* Map Section............................................... */
 
@@ -529,10 +479,16 @@ footer{
 #info .gemLogo p {
   width: 100%;
   margin-top: 15%;
+=======
+#info img {
+  width: 42%;
+  margin-bottom: 10%;
+>>>>>>> Stashed changes
 }
 
 /* Email Us + News Letter > Input */
 
+<<<<<<< Updated upstream
 #info input:focus,
 #info textarea:focus {
   color: var(--white);
@@ -541,12 +497,23 @@ footer{
 #info form>input,
 #info textarea,
 #info .newsletter>input {
+=======
+#info input:focus {
+  color: var(--white);
+}
+
+#info input {
+>>>>>>> Stashed changes
   background-color: rgb(102, 83, 135);
   border: 1px solid rgb(162, 156, 183);
   outline: none;
   padding: 4%;
   border-radius: 5px;
+<<<<<<< Updated upstream
   font-family: 'Montserrat';
+=======
+  font-family: "Montserrat";
+>>>>>>> Stashed changes
   width: 100%;
   font-size: 60%;
   margin-bottom: 8%;
@@ -554,10 +521,15 @@ footer{
 
 /* Email Us */
 
+<<<<<<< Updated upstream
 #info textarea {
   resize: both;
   overflow: hidden;
   max-width: 100%;
+=======
+#info .emailUs input:last-of-type {
+  padding-bottom: 20%;
+>>>>>>> Stashed changes
 }
 
 #info .emailUs button {
@@ -587,18 +559,30 @@ footer{
 }
 
 #info .newsletter button {
+<<<<<<< Updated upstream
   background-image: url(photos/forward-svgrepo-com.svg);
+=======
+  background-image: url(img/forward-svgrepo-com.svg);
+>>>>>>> Stashed changes
   background-color: #ce93d8;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
   border-radius: 0px 5px 5px 0px;
   border: none;
+<<<<<<< Updated upstream
   padding: 6%;
   transition: background-color 0.25s;
   position: absolute;
   top: -72px;
   right:-30px;
+=======
+  padding: 6.5%;
+  transition: background-color 0.25s;
+  position: absolute;
+  top: -78.5px;
+  right: 0px;
+>>>>>>> Stashed changes
 }
 
 #info .newsletter button:hover {
@@ -613,6 +597,10 @@ footer{
 
 #cRight {
   background-color: rgb(14, 11, 44);
+<<<<<<< Updated upstream
+=======
+  height: 100px;
+>>>>>>> Stashed changes
 }
 
 #cRight .container {
@@ -620,6 +608,7 @@ footer{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+<<<<<<< Updated upstream
 
   height: 150px;
 }
@@ -636,20 +625,35 @@ footer{
 }
 
 #cRight .codex span>a {
+=======
+}
+
+/* Codex */
+
+#cRight .codex span > a {
+>>>>>>> Stashed changes
   color: #ce93d8;
   font-size: 100%;
 }
 
+<<<<<<< Updated upstream
 
 #cRight .codex>span {
   /* color:  #428bca; */
 }
 
 #cRight .codex span>a:hover {
+=======
+#cRight .codex > span {
+  color: #428bca;
+}
+#cRight .codex span > a:hover {
+>>>>>>> Stashed changes
   text-decoration: underline;
 }
 
 /* Links */
+<<<<<<< Updated upstream
 #cRight .links {
   width: 45%;
 }
@@ -658,19 +662,31 @@ footer{
 
 #cRight .links a {
   /* color:  #428bca; */
+=======
+
+#cRight .links a {
+  color: #428bca;
+>>>>>>> Stashed changes
   transition: color 0.25s;
 }
 
 #cRight .links a:hover {
   color: #ce93d8;
+<<<<<<< Updated upstream
 
 }
 
 #cRight .links a {
+=======
+}
+
+#cRight .links a:not(:last-of-type) {
+>>>>>>> Stashed changes
   border-right: 1px solid #428bca;
   padding: 0% 5% 0% 5%;
 }
 
+<<<<<<< Updated upstream
 #cRight .links a:last-of-type {
   border: none;
 }
@@ -726,3 +742,6 @@ footer p {
   line-height: 200%;
   margin: 0%;
 }
+=======
+/* Icons */
+>>>>>>> Stashed changes
