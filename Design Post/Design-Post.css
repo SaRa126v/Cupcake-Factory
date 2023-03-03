@@ -7,6 +7,8 @@
 body {
    margin: 0%;
    background-color: hsl(240, 35%, 22%);
+   font-family: "monospace", sans-serif;
+
 }
 
 * {
@@ -49,6 +51,207 @@ p {
    line-height: 200%;
    margin: 0%;
 }
+
+
+header a {
+   height: 0;
+}
+
+header ul {
+   margin: 0;
+   padding: 0;
+}
+
+header li {
+   list-style: none;
+}
+
+
+/* ....................................................................................................... */
+
+
+@font-face {
+   font-family: monospace;
+   src: url(/fonts/Montserrat/);
+}
+
+/* header */
+
+header {
+   background: url(images/bg-header.jpg);
+   background-size: cover;
+   width: 100%;
+   height: 750px;
+}
+
+.container {
+   width: 1200px;
+   height: 100%;
+   margin: 0 auto;
+   position: relative;
+}
+
+/* div-top-header */
+
+.div-top-header {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 15px;
+}
+
+.div-top-header h1 {
+   margin: 0;
+   font-size: 15px;
+   padding: 5px 15px;
+   color: white;
+}
+
+/* div-left-header */
+
+.div-left-header {
+   display: flex;
+   padding-top: 10px;
+}
+
+/* animation-ul-flag-icon-header */
+
+@keyframes ul-flag-icon-header {
+   0% {
+       opacity: 0;
+   }
+
+   100% {
+       visibility: visible;
+       transform: translateY(-30px);
+   }
+}
+
+/* icon-flag-header */
+
+.icon-flag-header {
+   width: 20px;
+   margin-top: 5px;
+}
+
+.div-top-header>ul>li:hover>ul {
+   animation-name: ul-flag-icon-header;
+   animation-duration: 0.7s;
+   display: inline-block;
+   animation-fill-mode: forwards;
+}
+
+/* a-top-flag-header */
+
+.a-top-flag-header {
+   margin-top: 5px;
+}
+
+/* ul-flag-icon-header */
+
+.ul-flag-icon-header {
+   padding-left: 0;
+   margin-left: -15px;
+   width: 50px;
+   background-color: white;
+   display: inline-block;
+   display: none;
+   visibility: hidden;
+}
+
+/* li-flag-icon-header */
+
+.li-flag-icon-header {
+   padding: 5px;
+   margin-left: 9px;
+   display: inline-block;
+}
+
+.icon-flag-header.top {
+   display: flex;
+}
+
+/* div-right-header */
+
+.div-right-header {
+   display: flex;
+   padding-top: 10px;
+}
+
+/* icon-menu icon-search */
+
+.icon-search,
+.icon-menu {
+   width: 25px;
+}
+
+.a-icon-search,
+.a-icon-menu {
+   padding: 0 10px;
+}
+
+/* ul & li header */
+
+.div-top-header>div>ul>li:hover>ul {
+   display: inline-block;
+   animation-name: ul-flag-icon-header;
+   animation-duration: 0.7s;
+   animation-fill-mode: forwards;
+}
+
+.div-top-header>div>ul>li>a>h1 {
+   padding-bottom: 20px;
+}
+
+.div-top-header>div>ul {
+   position: relative;
+}
+
+.div-top-header>div>ul>li>ul {
+   position: absolute;
+   left: 0;
+   top: 170%;
+   display: none;
+}
+
+.div-top-header>div>ul>li>ul>a>li {
+   color: #000000;
+   padding: 20px 120px 20px 20px;
+   width: 100px;
+   background-color: rgb(245, 245, 245);
+}
+
+.div-top-header>div>ul>li>ul>a>li:hover {
+   background-color: white;
+}
+
+/* div-span-header */
+
+.div-span-header {
+   text-align: center;
+   margin-top: 200px;
+}
+
+.div-span-header svg:nth-of-type(2) {
+   margin-left: -50px;
+}
+
+.div-span-header p {
+   color: white;
+   font-size: 25px;
+   margin-top: 50px;
+}
+
+/* div-felsh-header */
+
+.div-felsh-header {
+   text-align: center;
+   margin-top: 150px;
+}
+
+.div-felsh-header:link {
+   transition-delay: 2s;
+}
+
 
 /* Landing Section ...............................................*/
 
