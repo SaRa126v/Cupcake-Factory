@@ -1058,3 +1058,129 @@ h1 {
     background-repeat: repeat-x;
     margin-block-end: 12px;
 }
+
+/* section-OUR-TEAM.................... */
+
+#section-OUR-TEAM {
+    background: url(images/bg\ \(3\).jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1322px;
+    background-repeat: no-repeat;
+}
+
+.div-top-title-our-team {
+    text-align: center;
+}
+
+.div-top-title-our-team svg {
+    margin-top: 130px;
+}
+
+.div-main-box-our-team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.div-main-box-our-team>div {
+    width: 360px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0px 7px #ce93d8;
+    transition: background-color 0.5s, color 0.5s;
+    position: relative;
+}
+
+.div-hover-img {
+    width: 128px;
+    height: 124px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.div-main-box-our-team>div>img:nth-of-type(1) {
+    border-radius: 50%;
+    width: 128px;
+    height: 124px;
+    margin: 50px 0 0 30px;
+    border-radius: 50%;
+
+}
+
+.div-main-box-our-team>div>h6 {
+    color: #3c3950;
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 100;
+    margin-left: 30px;
+
+}
+
+.div-main-box-our-team>div>p {
+    color: #99a9b5;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.div-main-box-our-team>div>a {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ce93d8;
+    margin-left: 30px;
+}
+
+.div-svg-box-our-team {
+    margin-left: 30px;
+}
+
+.div-svg-box-our-team>svg:nth-last-of-type(1) {
+    margin-left: 145px;
+}
+
+
+/* hover box... */
+
+.div-main-box-our-team>div:hover {
+    background-color: #153559;
+    /* transition-duration: 0.5s; */
+}
+
+.div-main-box-our-team>div:hover h6 {
+    color: #ce93d8;
+    /* transition-duration: 0.5s; */
+}
+
+.div-main-box-our-team>div:hover a {
+    color: white;
+    /* transition-duration: 0.5s; */
+}
+
+.div-main-box-our-team>div:hover .div-hover-img {
+    background-color: #00000086;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+
+/* div-paragraph-our-team */
+
+.div-paragraph-our-team{
+    margin-top: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-paragraph-our-team div{
+    width: 582px;
+    display: inline-block;
+}
+
+.div-paragraph-our-team p{
+    color: #f0f3f2;
+    line-height: 25px;
+    font-size: 14px;
+}

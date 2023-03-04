@@ -955,3 +955,7 @@ animation-delay: 0.15s;
 #cRight .icons a:nth-of-type(4) svg>path:hover {
    fill: #ffff;
 }
+
+.hoursHere iframe{
+   width: 99.8%;
+}
