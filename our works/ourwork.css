@@ -40,7 +40,7 @@ header>.container{
     color: #ffff;
 }
 /* div-top-header */
-.div-top-header {
+#div-top-header {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
@@ -48,7 +48,7 @@ header>.container{
     margin-bottom: 200px;
 }
 
-.div-top-header h1 {
+#div-top-header h1 {
     margin: 0;
     font-size: 15px;
     padding: 5px 15px;
@@ -82,7 +82,7 @@ header>.container{
     margin-top: 5px;
 }
 
-.div-top-header>ul>li:hover>ul {
+#div-top-header>ul>li:hover>ul {
     animation-name: ul-flag-icon-header;
     animation-duration: 0.7s;
     display: inline-block;
@@ -142,36 +142,36 @@ header>.container{
 
 /* ul & li header */
 
-.div-top-header>div>ul>li:hover>ul{
+#div-top-header>div>ul>li:hover>ul{
     display: inline-block;
     animation-name: ul-flag-icon-header;
     animation-duration: 0.7s;
     animation-fill-mode: forwards;
     }
 
-.div-top-header>div>ul>li>a>h1{
+#div-top-header>div>ul>li>a>h1{
     padding-bottom: 20px;
 }
 
-.div-top-header>div>ul{
+#div-top-header>div>ul{
     position: relative;
 }
 
-.div-top-header>div>ul>li>ul{
+#div-top-header>div>ul>li>ul{
     position: absolute;
     left: 0;
     top: 170%;
     display: none;
 }
 
-.div-top-header>div>ul>li>ul>a>li{
+#div-top-header>div>ul>li>ul>a>li{
     color: #000000;
     padding: 20px 120px 20px 20px;
     width: 100px;
     background-color: rgb(245, 245, 245);
 }
 
-.div-top-header>div>ul>li>ul>a>li:hover{
+#div-top-header>div>ul>li>ul>a>li:hover{
     background-color: white;
 }
 /* div-header-top end............ */
