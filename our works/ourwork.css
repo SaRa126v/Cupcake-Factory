@@ -415,12 +415,12 @@ width: 90%;
 .top-input{
     width: 25%;
     padding: 13px 29px;
-    background-color:rgb(2,3,129);
+    background-color:#23254c;
     color: #99a9b5;
     margin-right: 30px;
     margin-bottom: 20px;
     border: none;
-    
+    outline: none;
 }
 .bottom-input{
     width: 92.3%;
@@ -428,9 +428,10 @@ width: 90%;
     margin-right: 30px;
    padding: 13px 10px 250px 23px;
     color: #99a9b5;
-    background-color:rgb(2,3,129);
+    background-color:#23254c;
     margin-bottom: 50px;
     border: none;
+    outline: none;
 }
 .last-input{
     padding: 15px 20px;
@@ -439,6 +440,11 @@ width: 90%;
     font-size: 18px;
     font-weight: 400;
     border: none;
+    transition-duration: .3s;
+}
+.last-input:hover{
+    background-color: #fff;
+    color: #ce93d8;
 }
 .title-svg{
     font-size: 20px;
@@ -736,4 +742,115 @@ footer li {
 footer p {
     line-height: 200%;
     margin: 0%;
+}
+
+
+/* section fixed */
+
+#section-fixed {
+
+    position: fixed;
+    right: 0;
+    bottom: 15%;
+}
+
+#section-fixed>div {
+    text-align: right;
+}
+
+#section-fixed>div>div:nth-of-type(1) {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background-color: #06060f86;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#section-fixed>div>div:nth-of-type(1) p {
+    font-size: 13px;
+    margin-top: 17px;
+    color: white;
+}
+
+#section-fixed>div>div:nth-of-type(2) {
+    display: inline-block;
+    width: 90px;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+
+}
+
+#section-fixed>div>div:nth-of-type(2):hover {
+    transition-duration: 0.5s;
+    background-color: white;
+}
+
+#section-fixed>div>div:nth-of-type(2) span {
+    color: white;
+    position: absolute;
+}
+
+#section-fixed>div>div:nth-of-type(2) span:nth-of-type(1) {
+    top: 15%;
+    right: 25%;
+}
+
+#section-fixed>div>div:nth-of-type(2) span:nth-of-type(2) {
+    top: 50%;
+    right: 15%;
+}
+
+#section-fixed>div>div:nth-of-type(2):hover span {
+    transition-duration: 0.5s;
+    color: black;
+}
+
+#section-fixed>div>div:nth-of-type(3) {
+    width: 90px;
+    height: 60px;
+    background-color: #00bcd4;
+    text-align: center;
+    display: inline-block;
+}
+
+#section-fixed>div>div:nth-of-type(3):hover {
+    background-color: black;
+    transition-duration: 0.5s;
+}
+
+#section-fixed>div>div:nth-of-type(3):hover span {
+    color: white;
+    transition-duration: 0.5s;
+}
+
+#section-fixed>div>div:nth-of-type(3)>span {
+    font-size: 14px;
+}
+
+#section-fixed>div>div:nth-of-type(4)>a {
+    width: 60px;
+    height: 60px;
+    background-color: #06060f86;
+    display: inline-block;
+    margin-right: 30px;
+    text-align: center;
+
+}
+
+
+#section-fixed>div>div:nth-of-type(4)>a>svg {
+    margin-top: 24px;
+}
+
+/* svgs section-fixed  ......... */
+#section-fixed>div>svg:nth-of-type(1) {
+    margin: 0px 0 -8px -4px;
+}
+
+#section-fixed>div>div:nth-of-type(3)>svg {
+    margin-top: 10px;
 }
