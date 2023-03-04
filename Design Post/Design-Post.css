@@ -117,12 +117,12 @@ header {
 
 @keyframes ul-flag-icon-header {
    0% {
-       opacity: 0;
+      opacity: 0;
    }
 
    100% {
-       visibility: visible;
-       transform: translateY(-30px);
+      visibility: visible;
+      transform: translateY(-30px);
    }
 }
 
@@ -357,7 +357,7 @@ header {
    color: rgb(104, 104, 104);
 }
 
-/* Headphone, pen, keyboard Section ..................................*/
+/* Headphone, pen, keyboard Section = Animations......................*/
 
 #headphone .container,
 #pen .container,
@@ -373,39 +373,48 @@ header {
 #headphone>.container>div,
 #pen>.container>div,
 #keyboard>.container>div {
-   width: 48%;
+   width: 590px;
+   height: 500px;
 }
 
-#headphone img,
-#pen img,
-#keyboard img {
-   width: 100%;
+#headphone  .imgBehind {
+background-image: url(img/headphone.jpg);
+}
+
+#pen .imgBehind {
+   background-image: url(img/pen.jpg);
+animation-delay: 0.15s;
+}
+
+#keyboard .imgBehind {
+   background-image: url(img/keyboard.jpg);
 }
 
 /* Fall Animation */
 
 .imgBehind {
    position: relative;
-   animation: up 2s forwards;
+   animation: up 3s forwards;
    opacity: 1;
+   background-size: cover;
 }
 
 .imgFront {
-   width: 100%;
-   height: 100%;
    background-color: rgba(65, 27, 100, 0.603);
    position: absolute;
    top: 0;
    left: 0;
-   visibility: hidden;
+   right: 0;
+   bottom: 0;
+   opacity: 0;
 }
 
 .imgBehind:hover .imgFront {
-   visibility: visible;
+   opacity: 1;
 }
 
 .imgBehind:hover .imgFront svg {
-   animation: fall 0.65s forwards;
+   animation: fall 0.65s;
 }
 
 .imgFront svg {
@@ -475,15 +484,19 @@ header {
 }
 
 #pen .hexagon {
-   width: 80%;
+   width: 200px;
    height: 72px;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 80%;
+   background-size: 70px;
    background-image: url(img/hexagon\ final.png);
 }
 
 /* Keyboard Section .................................................*/
+
+#keyboard {
+   margin-bottom: 2%;
+}
 
 #keyboard ul {
    list-style: none;
@@ -505,12 +518,12 @@ header {
    content: counter(list);
    color: var(--white);
    border-radius: 50%;
-   padding: 1% 3%;
+   padding: 4px 15px;
 }
 
 #keyboard ul li:nth-of-type(1)::before {
    background-color: rgb(246, 180, 255);
-   padding: 1% 3.5%;
+   padding: 4px 18px;
 }
 
 #keyboard li:nth-of-type(1) span {
@@ -640,6 +653,11 @@ header {
 
 /* Admin Section .................................................*/
 
+
+#admin {
+   margin-bottom: 2%;
+}
+
 #admin .container {
    height: 300px;
    background-color: rgb(63, 63, 100);
@@ -648,8 +666,6 @@ header {
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
-
-   margin-bottom: 7%;
 }
 
 /* admin section > profile  */
@@ -774,7 +790,7 @@ header {
 
 #info img {
    width: 42%;
-   margin-top: 10% ;
+   margin-top: 10%;
 }
 
 #info .gemLogo p {
@@ -789,9 +805,9 @@ header {
    color: var(--white);
 }
 
-#info form > input,
+#info form>input,
 #info textarea,
-#info .newsletter > input {
+#info .newsletter>input {
    background-color: rgb(102, 83, 135);
    border: 1px solid rgb(162, 156, 183);
    outline: none;
