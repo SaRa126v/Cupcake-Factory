@@ -795,7 +795,6 @@ main .container {
 }
 
 /* sectin our pricess end🎇🎇🎇🎇🎇🎇🎇🎉 */
-.container {}
 
 .texts {
     float: center;
@@ -916,18 +915,18 @@ h1 {
 /*  Video Background Start......................................... */
 
 #why-us {
+    position: relative;
     width: 100%;
     height: 700px;
     overflow: hidden;
 }
 
 #why-us video {
-    position: fixed;
+    position: absolute;
     left: 0%;
     top: 0%;
-
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     z-index: -1;
     object-fit: cover;
 }
@@ -1028,27 +1027,20 @@ h1 {
     margin-left: 50px;
 }
 
-.rocket img {
-    /* margin-top: 100px; 
-     background-size: cover; 
-     background-image: url(images/rocket_bg.webp); 
-       background-position: center; 
-    
-     z-index: 1; 
-    
-     width: 1460.56px; 
-     height: 5692px auto; 
-     align-content: center; 
-     align-items: center; 
-     left: 0%; 
-     right: 0%; 
-   background-color: #000000;
- */
-}
-
 #why-us {
     display: block;
 
+}
+
+/* section-OUR-TEAM............................................... */
+
+#section-OUR-TEAM {
+    background: url(images/bg\ \(3\).jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 1400px;
+    background-repeat: no-repeat;
 }
 
 #meet-our-team>.container {
@@ -1056,18 +1048,7 @@ h1 {
     background-size: cover;
     background-position: center;
     background-repeat: repeat-x;
-    margin-block-end: 12px;
-}
-
-/* section-OUR-TEAM.................... */
-
-#section-OUR-TEAM {
-    background: url(images/bg\ \(3\).jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 1322px;
-    background-repeat: no-repeat;
+    /* margin-block-end: 12px; */
 }
 
 .div-top-title-our-team {
@@ -1168,19 +1149,134 @@ h1 {
 
 /* div-paragraph-our-team */
 
-.div-paragraph-our-team{
+.div-paragraph-our-team {
     margin-top: 230px;
     display: flex;
     justify-content: space-between;
 }
 
-.div-paragraph-our-team div{
+.div-paragraph-our-team div {
     width: 582px;
     display: inline-block;
 }
 
-.div-paragraph-our-team p{
+.div-paragraph-our-team p {
     color: #f0f3f2;
     line-height: 25px;
     font-size: 14px;
+}
+
+/* Team Section Percentage Animations............................... */
+
+
+#section-OUR-TEAM .percentage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 220px;
+    margin-top: 3%;
+}
+
+#section-OUR-TEAM .percentage>div {
+    width: 100%;
+    height: 35px;
+    background-color: #322f50;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 2px;
+}
+
+#section-OUR-TEAM .percentage p {
+    transform: translate( 14px , -9px);
+    font-size: 70%;
+    font-weight: bold;
+    color: rgb(25, 16, 58);
+}
+
+#section-OUR-TEAM .percentage span {
+    color: rgb(236, 234, 234);
+    
+}
+
+
+#section-OUR-TEAM .percentage div:nth-of-type(1)::before {
+    content: '';
+    background-color: rgb(206, 147, 216);
+    position: absolute;
+    width: 0%;
+    height: 35px;
+    animation: percentOne 2s ease-in-out forwards;
+}
+
+#section-OUR-TEAM .percentage div:nth-of-type(2)::before {
+    content: '';
+    background-color: rgb(129, 212, 250);
+    position: absolute;
+    width: 75%;
+    height: 35px;
+    animation: percentTwo 2s ease-in-out forwards;
+}
+
+#section-OUR-TEAM .percentage div:nth-of-type(3)::before {
+    content: '';
+    background-color: rgb(255, 204, 128);
+    position: absolute;
+    width: 0%;
+    height: 35px;
+    animation: percentThree 2s ease-in-out forwards;
+}
+
+#section-OUR-TEAM .percentage div:nth-of-type(4)::before {
+    content: '';
+    background-color: rgb(229, 115, 115);
+    position: absolute;
+    width: 0%;
+    height: 35px;
+    animation: percentFour 2s ease-in-out forwards;
+}
+
+
+@keyframes percentOne {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+
+@keyframes percentTwo {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+
+@keyframes percentThree {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+
+@keyframes percentFour {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 60%;
+    }
 }
