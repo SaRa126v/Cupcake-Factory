@@ -11,6 +11,8 @@
 body {
   margin: 0;
   background-color: rgb(10, 10, 61);
+
+  font-family: myFirstFont;
 }
 
 .container {
@@ -18,6 +20,7 @@ body {
   max-width: 1200px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 a {
@@ -25,9 +28,187 @@ a {
   text-decoration: none;
   color: white;
 }
+/* ..............................................div-header-top */
+header{
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+header a {
+  height: 0;
+  display: inline-block;
+  margin: 0;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  list-style: none;
+}
+
+
+
+/* div-top-header */
+
+#div-top-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+#div-top-header h1 {
+  margin: 0;
+  font-size: 15px;
+  padding: 5px 15px;
+  color: white;
+}
+
+/* div-left-header */
+
+.div-left-header{
+  position: absolute;
+  left: 0;
+  display: flex;
+}
+
+/* icon-flag-header */
+
+.icon-flag-header {
+  width: 20px;
+  margin-top: 5px;
+}
+
+#div-top-header>ul>li:hover>ul {
+  animation-name: ul-flag-icon-header;
+  animation-duration: 0.7s;
+  display: inline-block;
+  animation-fill-mode: forwards;
+}
+
+/* a-top-flag-header */
+
+.a-top-flag-header {
+  margin-top: 5px;
+}
+
+
+/* ul-flag-icon-header */
+
+.ul-flag-icon-header {
+  padding-left: 0;
+  margin-left: -15px;
+  width: 50px;
+  background-color: white;
+  display: inline-block;
+  display: none;
+  visibility: hidden;
+}
+
+/* li-flag-icon-header */
+
+.li-flag-icon-header {
+
+  padding: 5px;
+  margin-left: 9px;
+  display: inline-block;
+}
+
+.icon-flag-header.top {
+  display: flex;
+}
+
+/* div-right-header */
+
+.div-right-header {
+  display: flex;
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* icon-menu icon-search */
+
+.icon-search,
+.icon-menu {
+  width: 25px;
+}
+
+.a-icon-search,
+.a-icon-menu {
+  padding: 0 10px;
+}
+
+/* ul & li header */
+
+.li-main-icon-flag{
+  padding-bottom: 30px;
+  margin-top: -14px;
+}
+
+#div-top-header>div>ul>li{
+  padding-bottom: 30px;
+}
+
+#div-top-header>div>ul>li:hover>ul {
+  display: inline-block;
+  animation-name: ul-flag-icon-header;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+#div-top-header>div>ul>li>a>h1 {
+  padding-bottom: 20px;
+}
+
+#div-top-header>div>ul {
+  position: relative;
+}
+
+#div-top-header>div>ul>li>ul {
+  position: absolute;
+  left: 0;
+  top: 120%;
+  display: none;
+}
+
+#div-top-header>div>ul>li>ul>a>li {
+  color: #000000;
+  padding: 20px 120px 20px 20px;
+  width: 150px;
+  background-color: rgb(245, 245, 245);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#div-top-header>div>ul>li>ul>a>li:hover {
+  background-color: white;
+}
+/* animation-ul-flag-icon-header */
+
+@keyframes ul-flag-icon-header {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      visibility: visible;
+      transform: translateY(-30px);
+  }
+}
+
+
+/* ..............................................div-header-top */
+
+
+
+
 
 /* section-header */
-header {
+/* header {
   background-color: rgb(125, 20, 146);
 }
 
@@ -61,10 +242,10 @@ nav li {
 img {
   width: 100px;
   height: 50px;
-}
+} */
 
 /* header level 2 */
-
+/* 
 header nav > ul > li > ul {
   display: block;
   position: absolute;
@@ -91,7 +272,7 @@ header nav > ul > li > ul  > li > ul {
   background-color: aliceblue;
 
   
-}
+} */
 
 
 
@@ -430,3 +611,293 @@ header nav > ul > li > ul  > li > ul {
 }
 
  */
+
+
+
+ 
+/* Footer Start...................................................... */
+/* Map Section............................................... */
+
+footer{
+  margin-top: 1249px;
+}
+
+#map {
+  position: relative;
+  height: 800px;
+}
+
+#map iframe {
+  width: 99.8%;
+  height: 100%;
+}
+
+#map .whiteBackground {
+  background-color: var(--white);
+  opacity: 0.95;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+}
+
+#map .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#map span {
+  color: rgb(165, 165, 165);
+}
+
+#map img {
+  width: 70%;
+}
+
+#map .hoursHere {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#map .hoursHere>div:first-of-type {
+  width: 20%;
+  margin-bottom: 7%;
+}
+
+
+
+/* Info Section............................................... */
+
+#info {
+  background-image: radial-gradient(circle, rgba(101, 52, 146, 0.911),
+          hsl(240, 35%, 22%), rgba(101, 52, 146, 0.911));
+  height: 750px;
+}
+
+#info .container {
+  height: 750px;
+  width: 1322px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#info .container>div {
+  width: 30%;
+  height: 100%;
+  margin-top: 25%;
+}
+
+/* Gem Logo */
+
+#info img {
+  width: 42%;
+  margin-top: 10%;
+}
+
+#info .gemLogo p {
+  width: 100%;
+  margin-top: 15%;
+}
+
+/* Email Us + News Letter > Input */
+
+#info input:focus,
+#info textarea:focus {
+  color: var(--white);
+}
+
+#info form>input,
+#info textarea,
+#info .newsletter>input {
+  background-color: rgb(102, 83, 135);
+  border: 1px solid rgb(162, 156, 183);
+  outline: none;
+  padding: 4%;
+  border-radius: 5px;
+  font-family: 'Montserrat';
+  width: 100%;
+  font-size: 60%;
+  margin-bottom: 8%;
+}
+
+/* Email Us */
+
+#info textarea {
+  resize: both;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+#info .emailUs button {
+  width: 100%;
+  outline: none;
+  padding: 4%;
+  border-radius: 5px;
+  border: none;
+  background-color: #ce93d8;
+  color: var(--white);
+  transition: background-color 0.25s, color 0.25s;
+}
+
+#info .emailUs button:hover {
+  background-color: rgb(169, 184, 195);
+  color: hsl(240, 35%, 22%);
+}
+
+/* News Letter */
+
+#info .newsletter p {
+  margin-bottom: 6%;
+}
+
+#info .stick {
+  position: relative;
+}
+
+#info .newsletter button {
+  background-image: url(photos/forward-svgrepo-com.svg);
+  background-color: #ce93d8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  padding: 6%;
+  transition: background-color 0.25s;
+  position: absolute;
+  top: -72px;
+  right: -30px;
+}
+
+#info .newsletter button:hover {
+  background-color: #350058;
+}
+
+#info .newsletter span {
+  opacity: 0.5;
+}
+
+/* Copy Right Section............................................... */
+
+#cRight {
+  background-color: rgb(14, 11, 44);
+}
+
+#cRight .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 150px;
+}
+
+/* Codex */
+#cRight .codex,
+.links,
+.icons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  color: #99a9b5;
+  ;
+}
+
+#cRight .codex span>a {
+  color: #ce93d8;
+  font-size: 100%;
+}
+
+
+#cRight .codex>span {
+  /* color:  #428bca; */
+}
+
+#cRight .codex span>a:hover {
+  text-decoration: underline;
+}
+
+/* Links */
+#cRight .links {
+  width: 45%;
+}
+
+
+
+#cRight .links a {
+  /* color:  #428bca; */
+  transition: color 0.25s;
+}
+
+#cRight .links a:hover {
+  color: #ce93d8;
+
+}
+
+#cRight .links a {
+  border-right: 1px solid #428bca;
+  padding: 0% 5% 0% 5%;
+}
+
+#cRight .links a:last-of-type {
+  border: none;
+}
+
+/* Icons */
+
+#cRight .icons a svg {
+  transition: fill .5s;
+}
+
+#cRight .icons a svg:hover {
+  fill: #ffff;
+}
+
+#cRight .icons a:nth-of-type(4) svg>path:hover {
+  fill: #ffff;
+}
+
+
+:root {
+  --white: #fcfcfc;
+}
+
+
+footer p,
+footer a,
+footer span,
+footer li,
+footer h1,
+footer h2,
+footer h3 {
+  color: var(--white);
+  font-family: 'Montserrat';
+  text-decoration: none;
+}
+
+footer h2 {
+  font-size: 100%;
+}
+
+footer h4 {
+  font-family: 'Montserrat';
+}
+
+footer p,
+footer a,
+footer span,
+footer li {
+  font-size: 57.75%;
+}
+
+footer p {
+  line-height: 200%;
+  margin: 0%;
+}
+

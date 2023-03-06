@@ -162,6 +162,10 @@ li {
     padding-bottom: 30px;
 }
 
+#div-top-header>div>ul>li{
+    padding-bottom: 30px;
+}
+
 #div-top-header>div>ul>li:hover>ul {
     display: inline-block;
     animation-name: ul-flag-icon-header;
@@ -180,7 +184,7 @@ li {
 #div-top-header>div>ul>li>ul {
     position: absolute;
     left: 0;
-    top: 160%;
+    top: 110%;
     display: none;
 }
 
@@ -1296,7 +1300,7 @@ h1 {
 }
 
 #map iframe {
-    width: 100%;
+    width: 99.8%;
     height: 100%;
 }
 
