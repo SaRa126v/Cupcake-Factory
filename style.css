@@ -1466,7 +1466,8 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    width: 1519px;
+    margin: 0 auto;
     height: 150px;
 }
 
