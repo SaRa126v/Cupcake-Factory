@@ -2,6 +2,8 @@
 
 :root {
    --white: #fcfcfc;
+      scroll-behavior: smooth;
+  
 }
 
 body {
@@ -248,6 +250,7 @@ header {
 .div-felsh-header {
    text-align: center;
    margin-top: 550px;
+   
 }
 
 .div-felsh-header:link {
@@ -959,5 +962,121 @@ animation-delay: 0.15s;
 }
 
 .hoursHere iframe{
+   width: 99.8%;
+}
+
+
+/* section fixed */
+
+#section-fixed {
+
+   position: fixed;
+   right: 0;
+   bottom: 15%;
+}
+
+#section-fixed>div {
+   text-align: right;
+}
+
+#section-fixed>div>div:nth-of-type(1) {
+   display: inline-block;
+   width: 200px;
+   height: 60px;
+   background-color: #06060f86;
+   text-align: center;
+   vertical-align: middle;
+}
+
+#section-fixed>div>div:nth-of-type(1) p {
+   font-size: 13px;
+   margin-top: 17px;
+   color: white;
+}
+
+#section-fixed>div>div:nth-of-type(2) {
+   display: inline-block;
+   width: 90px;
+   height: 60px;
+   background-color: rgb(0, 0, 0);
+   vertical-align: middle;
+   text-align: center;
+   position: relative;
+
+}
+
+#section-fixed>div>div:nth-of-type(2):hover {
+   transition-duration: 0.5s;
+   background-color: white;
+}
+
+#section-fixed>div>div:nth-of-type(2) span {
+   color: white;
+   position: absolute;
+}
+
+#section-fixed>div>div:nth-of-type(2) span:nth-of-type(1) {
+   top: 15%;
+   right: 25%;
+}
+
+#section-fixed>div>div:nth-of-type(2) span:nth-of-type(2) {
+   top: 50%;
+   right: 15%;
+}
+
+#section-fixed>div>div:nth-of-type(2):hover span {
+   transition-duration: 0.5s;
+   color: black;
+}
+
+#section-fixed>div>div:nth-of-type(3) {
+   width: 90px;
+   height: 60px;
+   background-color: #00bcd4;
+   text-align: center;
+   display: inline-block;
+}
+
+#section-fixed>div>div:nth-of-type(3):hover {
+   background-color: black;
+   transition-duration: 0.5s;
+}
+
+#section-fixed>div>div:nth-of-type(3):hover span {
+   color: white;
+   transition-duration: 0.5s;
+}
+
+#section-fixed>div>div:nth-of-type(3)>span {
+   font-size: 14px;
+}
+
+#section-fixed>div>div:nth-of-type(4)>a {
+   width: 60px;
+   height: 60px;
+   background-color: #06060f86;
+   display: inline-block;
+   margin-right: 30px;
+   text-align: center;
+
+}
+
+
+#section-fixed>div>div:nth-of-type(4)>a>svg {
+   margin-top: 24px;
+}
+
+/* svgs section-fixed  ......... */
+#section-fixed>div>svg:nth-of-type(1) {
+   margin: 0px 0 -8px -4px;
+}
+
+#section-fixed>div>div:nth-of-type(3)>svg {
+   margin-top: 10px;
+}
+
+
+#map iframe {
    width: 99.8%;
 }
